@@ -46,6 +46,7 @@
 .introImageDiv {
   width: 35%;
   height: 100%;
+  aspect-ratio: 1;
 }
 
 .introImageDiv img {
