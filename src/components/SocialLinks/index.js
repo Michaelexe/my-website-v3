@@ -7,7 +7,10 @@ function SocialLinks(props) {
   return (
     <div className="socialLinksDiv flex fade-in" ref={socialLinks}>
       <h1>See More</h1>
-      <a href="https://linkedin.com/Michaelexe" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/michael-ispahani-56a788224/"
+        target="_blank"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
