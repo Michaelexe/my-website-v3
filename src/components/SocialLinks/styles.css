@@ -1,0 +1,44 @@
+.socialLinksDiv {
+  position: absolute;
+  right: 2.4vh;
+  gap: 3vh;
+  z-index: 10;
+}
+
+.socialLinksDiv h1 {
+  position: relative;
+  right: 13.5vh;
+  color: var(--color-3);
+  margin-top: 1.2vh;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 2.8vh;
+}
+
+.socialLinksDiv h1::after {
+  position: relative;
+  left: 14.5vh;
+  bottom: 1.7vh;
+  content: "";
+  display: block;
+  width: 15vh;
+  height: 0.4vh;
+  background-color: var(--color-3);
+}
+
+.linkSVG {
+  height: 5.3vh;
+  width: 5.3vh;
+  fill: var(--color-3);
+  transition: fill 100ms ease-in;
+}
+
+.linkSVG:hover {
+  fill: var(--color-5);
+}
+
+@media (max-width: 800px) {
+  .socialLinksDiv {
+    display: none;
+  }
+} ;

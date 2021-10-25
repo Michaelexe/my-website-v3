@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap%27);
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --color-1: #011627;
+  --color-2: #112240;
+  --color-3: #a1e4f1;
+  --color-4: #b4e9f4;
+  --color-5: #f72585;
+}
+
+body {
+  background-color: var(--color-1);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* fade in classes */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* flex box classes */
+.flex {
+  display: flex;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexJustifyAndAlignCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--color-2);
+}
+
+.HTMLTags {
+  font-family: Montserrat;
+  font-size: 4.5vh;
+  color: var(--color-5);
+  font-weight: 400;
+  margin: 1vh 0px;
+}
+
+@media (max-width: 1050px) {
+  .HTMLTags {
+    font-size: 25px;
+  }
+}

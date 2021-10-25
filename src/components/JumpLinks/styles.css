@@ -1,0 +1,41 @@
+.jumpLinksDiv {
+  position: absolute;
+  left: 6vh;
+  width: fit-content;
+  z-index: 10;
+}
+
+.jumpLinksDiv ol {
+  gap: 6vh;
+  list-style: none;
+}
+
+.jumpLinksDiv ol li {
+  counter-increment: item 1;
+  font-family: Montserrat;
+  cursor: pointer;
+  transition: color 100ms ease-in;
+  font-size: 3.25vh;
+}
+
+.jumpLinksDiv ol li a {
+  text-decoration: none;
+  color: var(--color-3);
+  transition: color 100ms ease-in;
+}
+
+.jumpLinksDiv ol li a:hover {
+  color: var(--color-5);
+}
+
+.jumpLinksDiv ol li::before {
+  content: "0" counter(item) ".";
+  color: var(--color-5);
+  margin-right: 0.825vh;
+}
+
+@media (max-width: 1050px) {
+  .jumpLinksDiv {
+    display: none;
+  }
+}
