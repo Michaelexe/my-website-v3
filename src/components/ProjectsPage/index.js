@@ -60,17 +60,24 @@ function ProjectsPage() {
             </svg>
           </div>
         </a>
-        <div
-          className="projectCards flexColumn fade-in"
-          ref={(element) => cards.current.push(element)}
+        <a
+          href="https://locaro.in"
+          target="_blank"
+          style={{ textDecoration: "none" }}
         >
-          <h1>Locaro (front end)</h1>
-          <p>
-            Locaro is an ecommerce website that creates a hyperlocalized network
-            between small businesses and customers. Front end made in React.
-          </p>
-          <img src={locaroImage} alt="locaro" className="projectSVG" />
-        </div>
+          <div
+            className="projectCards flexColumn fade-in"
+            ref={(element) => cards.current.push(element)}
+          >
+            <h1>Locaro (front end)</h1>
+            <p>
+              Locaro is an ecommerce website that creates a hyperlocalized
+              network between small businesses and customers. Front end made in
+              React.
+            </p>
+            <img src={locaroImage} alt="locaro" className="projectSVG" />
+          </div>
+        </a>
         <a
           href="https://github.com/Michaelexe/Coronavirus_live_update_app"
           target="_blank"
