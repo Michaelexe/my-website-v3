@@ -46,12 +46,12 @@
 .introImageDiv {
   width: 35%;
   height: 100%;
-  aspect-ratio: 1;
 }
 
 .introImageDiv img {
   border-radius: 50%;
   width: 100%;
+  aspect-ratio: 1;
 }
 
 @media (max-width: 1050px) {
