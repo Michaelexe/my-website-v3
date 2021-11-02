@@ -138,7 +138,7 @@ function ProjectsPage() {
           >
             <h1>Tik Tak Toe</h1>
             <p>
-              A simple tik toe toe game (without GUI) made using a lot of print
+              A simple tik tak toe game (without GUI) made using a lot of print
               and if-else statements. You also have an option to play against an
               unintelligent bot or against a friend. This too was made using
               Python.
