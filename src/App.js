@@ -60,18 +60,15 @@ function App() {
       if (skillsContainerTarget)
         appearOnScroll.unobserve(skillsContainerTarget);
 
-      window.removeEventListener(
-        "scroll",
-        window.addEventListener("scroll", () => {
-          let scrollTop = window.scrollY || document.documentElement.scrollTop;
-          if (scrollTop > lastScrollTop) {
-            navbar.style.top = "-10vh";
-          } else {
-            navbar.style.top = "0";
-          }
-          lastScrollTop = scrollTop;
-        })
-      );
+      window.removeEventListener("scroll", () => {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-10vh";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
     };
   }, [socialLinks, jumpLinks, introPage, skillsContainer, navbar]);
 
