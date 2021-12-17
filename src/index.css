@@ -44,6 +44,14 @@ body {
   align-items: center;
 }
 
+.flexAlignCenter {
+  align-items: center;
+}
+
+.flexJustifyCenter {
+  justify-content: center;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }

@@ -5,6 +5,7 @@ import logo from "./assets/logo.png";
 
 import IntroPage from "./components/IntroPage.js";
 import JumpLinks from "./components/JumpLinks/index.js";
+import OtherSkills from "./components/OtherSkills";
 import ProjectsPage from "./components/ProjectsPage/index.js";
 import SkillsPage from "./components/SkillsPage";
 import SocialLinks from "./components/SocialLinks/index.js";
@@ -82,6 +83,7 @@ function App() {
       <IntroPage introPage={introPage} />
       <ProjectsPage />
       <SkillsPage skillsContainer={skillsContainer} />
+      <OtherSkills />
     </>
   );
 }
