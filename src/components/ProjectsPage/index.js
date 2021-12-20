@@ -111,7 +111,7 @@ function ProjectsPage() {
           >
             <h1>Snake Game</h1>
             <p>
-              your classic old 2D snake game made using pygame. No clue if the
+              Your classic old 2D snake game made using pygame. No clue if the
               code used is similar to anything other programmers use to make it
               as I tried my best not to look at stack overflow. This took me
               about 4 hours.
@@ -188,11 +188,10 @@ function ProjectsPage() {
           >
             <h1>Automatic File Mover</h1>
             <p>
-              Yet another app made with tkinter for the GUI and a lot of if-else
-              statements. Pretty much this takes in your password and changes it
-              into something longer and unpredictable. It also saves them into a
-              password.txt file in the same folder as the app. Again, this was
-              made with Python.
+              Basically a script that was made using Python's OS module that
+              moves files to different folders depending on the file extension
+              (.mp3 to the music folder, etc.) after a file is added to the
+              downloads folder.
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
