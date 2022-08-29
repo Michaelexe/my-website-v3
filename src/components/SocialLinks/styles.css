@@ -30,11 +30,12 @@
   height: 5.3vh;
   width: 5.3vh;
   fill: var(--color-3);
-  transition: fill 100ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .linkSVG:hover {
   fill: var(--color-5);
+  transform: scale(1.2);
 }
 
 @media (max-width: 800px) {

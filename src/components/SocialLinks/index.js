@@ -2,10 +2,9 @@ import React, { useEffect } from "react";
 
 import "./styles.css";
 
-function SocialLinks(props) {
-  const { socialLinks } = props;
+function SocialLinks() {
   return (
-    <div className="socialLinksDiv flex fade-in" ref={socialLinks}>
+    <div className="socialLinksDiv flex">
       <h1>See More</h1>
       <a
         href="https://www.linkedin.com/in/michael-ispahani-56a788224/"

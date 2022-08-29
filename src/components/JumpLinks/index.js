@@ -2,10 +2,9 @@ import React from "react";
 
 import "./styles.css";
 
-function JumpLinks(props) {
-  const { jumpLinks } = props;
+function JumpLinks() {
   return (
-    <div className="jumpLinksDiv fade-in" ref={jumpLinks}>
+    <div className="jumpLinksDiv">
       <ol className="flex">
         <li>
           <a href="#firstPage">Intro</a>

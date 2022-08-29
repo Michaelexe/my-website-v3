@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import WAVES from "vanta/dist/vanta.waves.min";
 
 import "./App.css";
-import logo from "./assets/logo.png";
 
 import IntroPage from "./components/IntroPage.js";
 import JumpLinks from "./components/JumpLinks/index.js";
+import Navbar from "./components/Navbar";
 import OtherSkills from "./components/OtherSkills";
 import ProjectsPage from "./components/ProjectsPage/index.js";
 import SkillsPage from "./components/SkillsPage";
@@ -59,12 +59,10 @@ function App() {
   }, appearOptions);
 
   useEffect(() => {
+    const navbarTarget = navbar.current;
     const skillsContainerTarget = skillsContainer.current;
-    const socialLinksTarget = socialLinks.current;
-    const jumpLinksTarget = jumpLinks.current;
     const introPageTarget = introPage.current;
-    appearOnScroll.observe(socialLinksTarget);
-    appearOnScroll.observe(jumpLinksTarget);
+    appearOnScroll.observe(navbarTarget);
     appearOnScroll.observe(introPageTarget);
     appearOnScroll.observe(skillsContainerTarget);
 
@@ -87,9 +85,8 @@ function App() {
     });
 
     return () => {
-      if (socialLinksTarget) appearOnScroll.unobserve(socialLinksTarget);
-      if (jumpLinksTarget) appearOnScroll.unobserve(jumpLinksTarget);
       if (introPageTarget) appearOnScroll.unobserve(introPageTarget);
+      if (navbarTarget) appearOnScroll.unobserve(navbarTarget);
       if (skillsContainerTarget)
         appearOnScroll.unobserve(skillsContainerTarget);
 
@@ -109,11 +106,7 @@ function App() {
 
   return (
     <>
-      <div id="navBar" className="flex" ref={navbar}>
-        <img src={logo} alt="" />
-        <SocialLinks socialLinks={socialLinks} />
-        <JumpLinks jumpLinks={jumpLinks} />
-      </div>
+      <Navbar navbar={navbar} />
       <IntroPage introPage={introPage} />
       <ProjectsPage />
       <SkillsPage skillsContainer={skillsContainer} />
