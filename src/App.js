@@ -10,6 +10,7 @@ import OtherSkills from "./components/OtherSkills";
 import ProjectsPage from "./components/ProjectsPage/index.js";
 import SkillsPage from "./components/SkillsPage";
 import SocialLinks from "./components/SocialLinks/index.js";
+import WorkPage from "./components/WorkPage";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -42,7 +43,6 @@ function App() {
   };
 
   const navbar = useRef();
-  const skillsContainer = useRef();
   const socialLinks = useRef();
   const jumpLinks = useRef();
   const introPage = useRef();
@@ -60,11 +60,11 @@ function App() {
 
   useEffect(() => {
     const navbarTarget = navbar.current;
-    const skillsContainerTarget = skillsContainer.current;
+    // const skillsContainerTarget = skillsContainer.current;
     const introPageTarget = introPage.current;
     appearOnScroll.observe(navbarTarget);
     appearOnScroll.observe(introPageTarget);
-    appearOnScroll.observe(skillsContainerTarget);
+    // appearOnScroll.observe(skillsContainerTarget);
 
     var lastScrollTop = 0;
     let root = document.querySelector("#root");
@@ -87,8 +87,8 @@ function App() {
     return () => {
       if (introPageTarget) appearOnScroll.unobserve(introPageTarget);
       if (navbarTarget) appearOnScroll.unobserve(navbarTarget);
-      if (skillsContainerTarget)
-        appearOnScroll.unobserve(skillsContainerTarget);
+      // if (skillsContainerTarget)
+      //   appearOnScroll.unobserve(skillsContainerTarget);
 
       let root = document.querySelector("#root");
 
@@ -102,14 +102,15 @@ function App() {
         lastScrollTop = scrollTop;
       });
     };
-  }, [socialLinks, jumpLinks, introPage, skillsContainer, navbar]);
+  }, [socialLinks, jumpLinks, introPage, navbar]);
 
   return (
     <>
       <Navbar navbar={navbar} />
       <IntroPage introPage={introPage} />
+      <WorkPage />
       <ProjectsPage />
-      <SkillsPage skillsContainer={skillsContainer} />
+      {/* <SkillsPage skillsContainer={skillsContainer} /> */}
       <OtherSkills />
     </>
   );

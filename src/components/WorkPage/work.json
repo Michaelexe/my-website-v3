@@ -1,0 +1,16 @@
+{
+    "locaro": {
+        "order": 0,
+        "position": "Software Developer / Co-Founder",
+        "start_date": "Sept 2021",
+        "end_date": "Present",
+        "description": ["Created a hyperlocal eCommerce platform that allows small shops in your area to sell their products online. www.locaro.in.", "Actively learnt new programming skills almost everyday.", "Constantly looked for bugs and ways to improve the product for the best user experience"]
+    },
+    "qzense": {
+        "order": 1,
+        "position": "Front End Intern",
+        "start_date": "May 2022",
+        "end_date": "Aug 2022",
+        "description": ["Created an application for corporate farmers to keep track of the quality of their farms.", "Worked at a start up. Hence, I was always busy and had to learn new things.", "Constantly had to come up with new ideas."]
+    }
+}

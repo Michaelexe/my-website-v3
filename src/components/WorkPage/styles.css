@@ -1,0 +1,77 @@
+.work-container {
+    margin: 0px auto;
+    width: 80%;
+}
+
+.work-container__main {
+    width: 80%;
+    margin: 10vh auto;
+}
+
+.work-container__tabs {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.work-container__tabs__indicator {
+    position: absolute;
+    left: 0;
+    height: 5.9vh;
+    width: 4px;
+    background-color: var(--color-5);
+    transition: all 250ms linear;
+}
+
+.work-container__tabs__tab {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 700;
+    transition: all 150ms ease-in;
+    cursor: pointer;
+    padding: 1.7vh 2.5vh 1.7vh 1.7vh;
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.work-container__tabs__tab:hover {
+    color: var(--color-5);
+    background-color: var(--color-2);
+}
+
+.work-container__tabs__tab.active {
+    color: var(--color-5);
+}
+
+.work-container__content {
+    color: white;
+    font-family: Montserrat;
+    padding: 0 1.5vh;
+}
+
+.work-container__content h1 {
+    font-size: 5vh;
+}
+
+.work-container__content p {
+    font-size: 2.5vh;
+    margin: 1vh 0;
+}
+
+.work-container__content ul {
+    list-style: none;
+    margin-top: 3vh;
+}
+
+.work-container__content li {
+    position: relative;
+    padding: 1.5vh 0 1.5vh 2vh;
+    font-size: 3vh;
+}
+
+.work-container__content li::before {
+    content: '▹';
+    color: var(--color-5);
+    position: absolute;
+    left: 0;
+}
