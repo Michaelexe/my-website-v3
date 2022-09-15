@@ -39,7 +39,13 @@ function OtherSkills() {
           style={{ left: "20%", marginBottom: "20px" }}
         >
           <div className="otherSkillsTextDiv flexColumn">
-            <h1>11 Years Of Guitar</h1>
+            <h1>
+              {Math.floor(
+                (new Date() - new Date("2010-06-01")) /
+                  (1000 * 60 * 60 * 24 * 365.25)
+              )}{" "}
+              Years Of Guitar
+            </h1>
             <p>
               I've been playing guitar ever since I was 7. I started off with a
               classical guitar and then after 6 years started playing the

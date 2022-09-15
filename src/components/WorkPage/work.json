@@ -1,5 +1,6 @@
 {
     "locaro": {
+        "organisation": "Locaro",
         "order": 0,
         "position": "Software Developer / Co-Founder",
         "start_date": "Sept 2021",
@@ -7,6 +8,7 @@
         "description": ["Created a hyperlocal eCommerce platform that allows small shops in your area to sell their products online. www.locaro.in.", "Actively learnt new programming skills almost everyday.", "Constantly looked for bugs and ways to improve the product for the best user experience"]
     },
     "qzense": {
+        "organisation": "Qzense Labs",
         "order": 1,
         "position": "Front End Intern",
         "start_date": "May 2022",
