@@ -72,8 +72,7 @@ function OtherSkills() {
             <p>
               As mentioned above, I've won multiple chess tournaments in my
               school whenever held. Don't ask me how I learn't to play it that
-              well, I just somehow was good at it. (Maybe it was because I just
-              played it whenever I didn't have much to do or was travelling)
+              well, I just somehow was good at it.
             </p>
           </div>
         </div>

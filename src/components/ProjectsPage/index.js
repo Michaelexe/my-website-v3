@@ -127,7 +127,7 @@ function ProjectsPage() {
             </svg>
           </div>
         </a>
-        <a
+        {/* <a
           href="https://github.com/Michaelexe/Tik-Tak-Toe"
           target="_blank"
           style={{ textDecoration: "none" }}
@@ -176,7 +176,7 @@ function ProjectsPage() {
               className="projectSVG"
             />
           </div>
-        </a>
+        </a> */}
         <a
           href="https://github.com/Michaelexe/Automatic-File-Mover"
           target="_blank"
