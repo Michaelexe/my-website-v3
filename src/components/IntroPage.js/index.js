@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./styles.css";
-import myImage from "./assets/myImage2.jpg";
+import myImage from "./assets/myImage3.jpg";
 
 function IntroPage(props) {
   const { introPage } = props;
