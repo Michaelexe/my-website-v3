@@ -46,11 +46,13 @@
 
 .work-container__content h1 {
     font-size: 5vh;
+    color: var(--color-3);
 }
 
 .work-container__content p {
     font-size: 2.5vh;
     margin: 1vh 0;
+    color: var(--color-4);
 }
 
 .work-container__content ul {
@@ -96,7 +98,7 @@
 
     .work-container__content {
         padding: 0;
-        width: 95%;
+        width: 98%;
         margin: 0 auto;
     }
 
@@ -109,6 +111,6 @@
     }
 
     .work-container__content li {
-        font-size: 2.5vh;
+        font-size: 2.2vh;
     }
 }
