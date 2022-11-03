@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-website-v3/static/css/main.e93b47cb.chunk.css",
-    "main.js": "/my-website-v3/static/js/main.d14f2ddd.chunk.js",
-    "main.js.map": "/my-website-v3/static/js/main.d14f2ddd.chunk.js.map",
+    "main.js": "/my-website-v3/static/js/main.660955d0.chunk.js",
+    "main.js.map": "/my-website-v3/static/js/main.660955d0.chunk.js.map",
     "runtime-main.js": "/my-website-v3/static/js/runtime-main.96b7a90c.js",
     "runtime-main.js.map": "/my-website-v3/static/js/runtime-main.96b7a90c.js.map",
     "static/js/2.7c84bbc0.chunk.js": "/my-website-v3/static/js/2.7c84bbc0.chunk.js",
@@ -12,12 +12,12 @@
     "static/js/2.7c84bbc0.chunk.js.LICENSE.txt": "/my-website-v3/static/js/2.7c84bbc0.chunk.js.LICENSE.txt",
     "static/media/chess.638d9592.jpg": "/my-website-v3/static/media/chess.638d9592.jpg",
     "static/media/logo.3e3b764e.png": "/my-website-v3/static/media/logo.3e3b764e.png",
-    "static/media/myImage2.c4fe8d8d.jpg": "/my-website-v3/static/media/myImage2.c4fe8d8d.jpg"
+    "static/media/myImage3.46e9d59e.jpg": "/my-website-v3/static/media/myImage3.46e9d59e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.96b7a90c.js",
     "static/js/2.7c84bbc0.chunk.js",
     "static/css/main.e93b47cb.chunk.css",
-    "static/js/main.d14f2ddd.chunk.js"
+    "static/js/main.660955d0.chunk.js"
   ]
 }
