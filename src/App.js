@@ -110,7 +110,6 @@ function App() {
       <IntroPage introPage={introPage} />
       <WorkPage />
       <ProjectsPage />
-      {/* <SkillsPage skillsContainer={skillsContainer} /> */}
       <OtherSkills />
     </>
   );

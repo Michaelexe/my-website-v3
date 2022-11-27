@@ -42,6 +42,7 @@
     color: white;
     font-family: Montserrat;
     padding: 0 1.5vh;
+    padding-left: 2.5vh;
 }
 
 .work-container__content h1 {
@@ -81,7 +82,7 @@
     .work-container__main {
         flex-direction: column;
         width: 100%;
-        margin: 4vh auto;
+        margin: 2vh auto;
     }
 
     .work-container__tabs {
@@ -98,7 +99,7 @@
 
     .work-container__content {
         padding: 0;
-        width: 98%;
+        width: 95%;
         margin: 0 auto;
     }
 

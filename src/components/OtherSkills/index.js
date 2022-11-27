@@ -70,9 +70,13 @@ function OtherSkills() {
           <div className="otherSkillsTextDiv flexColumn">
             <h1>School Chess Champion</h1>
             <p>
-              As mentioned above, I've won multiple chess tournaments in my
+              {/* As mentioned above, I've won multiple chess tournaments in my
               school whenever held. Don't ask me how I learn't to play it that
-              well, I just somehow was good at it.
+              well, I just somehow was good at it. */}
+              At some random point in my life, I started playing chess whenever
+              I got free time, which led to me getting better at recognising and
+              taking advantage of other's mistakes. Eventually I ended up
+              becoming chess champion at my school.
             </p>
           </div>
         </div>

@@ -13,13 +13,14 @@ function IntroPage(props) {
           <h2>Michael Ispahani.</h2>
           <h3>Co-founder of Locaro</h3>
           <p>
-            I'm a{" "}
+            A{" "}
             {Math.floor(
               (new Date() - new Date("2003-08-17")) /
                 (1000 * 60 * 60 * 24 * 365.25)
             )}{" "}
-            year old software engineer specialized in web development, planning
-            to learning more in data science in the near future.
+            year old software engineer that has been programming since he was
+            13. Currently studying Computer Science at Ontario Tech University,
+            specializing in data science.
           </p>
           <h1 className="HTMLTags">{"</intro>"}</h1>
         </div>
