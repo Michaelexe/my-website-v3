@@ -10,10 +10,10 @@ function JumpLinks() {
           <a href="#firstPage">Intro</a>
         </li>
         <li>
-          <a href="#secondPage">Projects</a>
+          <a href="#secondPage">Work</a>
         </li>
         <li>
-          <a href="#thirdPage">Skills</a>
+          <a href="#thirdPage">Projects</a>
         </li>
       </ol>
     </div>

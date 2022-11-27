@@ -40,13 +40,16 @@ function Navbar({ navbar }) {
           ref={menuRef}
         >
           <a href="#firstPage" className="menu__jumps">
-            Intro
+            Introduction
           </a>
-          <a href="#secondPage" className="menu__jumps">
-            Projects
+          <a href="#secondPage" className="menu_jumps">
+            Work Experience
           </a>
           <a href="#thirdPage" className="menu__jumps">
-            Skills
+            Projects
+          </a>
+          <a href="#forthPage" className="menu__jumps">
+            Other Skills
           </a>
           <div className="menu__socials flex flexAlignCenter">
             <a

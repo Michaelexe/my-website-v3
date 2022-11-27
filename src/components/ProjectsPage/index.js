@@ -30,7 +30,7 @@ function ProjectsPage() {
   }, []);
 
   return (
-    <section id="secondPage" className="flexColumn flexJustifyAndAlignCenter">
+    <section id="thirdPage" className="flexColumn flexJustifyAndAlignCenter">
       <div id="projectsContainer">
         <h1 className="HTMLTags">{"<projects>"}</h1>
         <a

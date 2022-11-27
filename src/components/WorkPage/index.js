@@ -8,7 +8,7 @@ import workJson from "./work.json";
 function WorkPage() {
   const [currentTab, setCurrentTab] = useState("locaro");
   return (
-    <section id="forthPage" className="flex">
+    <section id="secondPage" className="flex">
       <div className="work-container flex flexColumn">
         <h1 className="HTMLTags">{"<work>"}</h1>
         <div className="flex work-container__main">
