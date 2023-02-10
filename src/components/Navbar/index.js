@@ -42,7 +42,7 @@ function Navbar({ navbar }) {
           <a href="#firstPage" className="menu__jumps">
             Introduction
           </a>
-          <a href="#secondPage" className="menu_jumps">
+          <a href="#secondPage" className="menu__jumps">
             Work Experience
           </a>
           <a href="#thirdPage" className="menu__jumps">
