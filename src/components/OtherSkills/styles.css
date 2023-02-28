@@ -20,6 +20,7 @@
   overflow: hidden;
   opacity: 0;
   transition: all 500ms ease-in;
+  display: flex;
 }
 
 .otherSkillsTextDiv {
@@ -53,12 +54,18 @@
   height: 454px;
   margin-bottom: -54px;
 }
+
 .otherSkillsDiv.active {
   opacity: 1;
 }
 
 .otherSkillsDiv.active {
   left: 50% !important;
+}
+
+.otherSkills__video {
+  width: 400px;
+  height: 400px;
 }
 
 @media (max-width: 1200px) {
@@ -83,7 +90,7 @@
     padding: 20px;
   }
 
-  .otherSkillsDiv iframe {
+  .otherSkills__video {
     order: 1;
     width: 100%;
     height: auto;

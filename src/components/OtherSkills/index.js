@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 import "./styles.css";
 import chessJPG from "./assets/chess.jpg";
+import guitarVideo from "./assets/gooseGuitar.mp4";
 
 function OtherSkills() {
   const cards = useRef(new Array());
@@ -55,11 +56,9 @@ function OtherSkills() {
               lot of math rock styled guitar.
             </p>
           </div>
-          <iframe
-            src="https://www.instagram.com/p/CNHW8dLp8qE/embed"
-            frameborder="0"
-            allowtransparency="true"
-          ></iframe>
+          <video className="otherSkills__video" controls>
+            <source src={guitarVideo} type="video/mp4" />
+          </video>
         </div>
         <div
           className="otherSkillsDiv flex"
