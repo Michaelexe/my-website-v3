@@ -2,12 +2,60 @@ import React, { useEffect, useRef, useState } from "react";
 
 import "./styles.css";
 import locaroImage from "./assets/locaroImage.png";
+import easyconnectImage from "./assets/easyconnect.png";
 
 const projects = [
   {
+    title: "Locaro",
+    description:
+      "Locaro is an hyperlocal eCommerce platform that allows small shops in your area to sell their products online. Single handedly made the entire front end (consisting of three clients) in 4 months.",
+    svg: <img src={locaroImage} alt="locaro" className="projectSVG" />,
+    link: "https://locaro.in",
+  },
+  {
+    title: "EasyConnect",
+    description:
+      "Our submission for Hackville 2023. A remote desktop control application that lets you control your desktop using your phone. Our project provides a convenient and efficient way for you to manage your desktop.",
+    link: "https://github.com/royce-mathew/Hackville2023",
+    svg: (
+      <img
+        src={easyconnectImage}
+        alt="EasyConnect"
+        className="projectSVG"
+        style={{ transform: "scale(0.8) translateX(10%)" }}
+      />
+    ),
+    languages: {
+      JavaScript: ["38.2%", "yellow"],
+      Python: ["22.0%", "skyblue"],
+      Java: ["13.7%", "brown"],
+      CSS: ["9.0%", "purple"],
+      HTML: ["5.1%", "orange"],
+      Ruby: ["4.3%", "red"],
+      Other: ["7.7%", "darkgray"],
+    },
+    moreInfo: (
+      <div style={{ width: "100%", textAlign: "left" }}>
+        <h1 style={{ marginBottom: "10px" }}>Features</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "30px" }}>
+          <li>✅ User-friendly display</li>
+          <li>💻 Automatically open Google Search and Wikipedia</li>
+          <li>🎵 Play music on your desktop through your phone!</li>
+          <li>🎚️ Changes volume and brightness</li>
+        </ul>
+        <h1 style={{ marginBottom: "10px" }}>Libraries and Tools used</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+          <li>React, React-native for front end </li>
+          <li>Flask for back-end </li>
+          <li>Selenium forautomation</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
     title: "This Website",
     description:
-      "My little playground for trying out various front end concepts. Through this website, I learnt more about animations, intersection observers, etc.",
+      "This is the website you are viewing right now! The main design and layout of the website was made in 2 days, but is updated fairly often as I try out new things I have learn't and keep the information and content here up-to-date",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -25,13 +73,6 @@ const projects = [
       CSS: ["29.0%", "purple"],
       HTML: ["5.5%", "red"],
     },
-  },
-  {
-    title: "Locaro",
-    description:
-      "Locaro is an hyperlocal eCommerce platform that allows small shops in your area to sell their products online. Single handedly made the entire front end (consisting of three clients) in 4 months.",
-    svg: <img src={locaroImage} alt="locaro" className="projectSVG" />,
-    link: "https://locaro.in",
   },
   {
     title: "OTU Parties",
@@ -54,7 +95,7 @@ const projects = [
       Java: ["16.8%", "brown"],
       "C++": ["7.8%", "pink"],
       "Objective-C++": ["4.8%", "purple"],
-      "Objective-C": ["2.6%", "blue"],
+      "Objective-C": ["2.6%", "skyblue"],
       Ruby: ["1.7%", "maroon"],
       Other: ["1.4%", "darkgray"],
     },
@@ -71,7 +112,7 @@ const projects = [
     ),
     link: "https://github.com/Michaelexe/Coronavirus_live_update_app",
     languages: {
-      Python: ["100%", "blue"],
+      Python: ["100%", "skyblue"],
     },
   },
   {
@@ -92,7 +133,7 @@ const projects = [
     ),
     link: "https://github.com/Michaelexe/Automatic-File-Mover",
     languages: {
-      Python: ["100%", "blue"],
+      Python: ["100%", "skyblue"],
     },
   },
 ];
@@ -126,6 +167,7 @@ function FullProjectCard({ project, setOpeneedProject }) {
       }}
     >
       <div className="project-see-more">
+        <div></div>
         <h1 className="project-see-more__title">
           {project.title}{" "}
           <a href={project.link}>
@@ -176,6 +218,7 @@ function FullProjectCard({ project, setOpeneedProject }) {
             </div>
           </div>
         ) : null}
+        {project.moreInfo}
       </div>
     </div>
   );
