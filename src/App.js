@@ -70,7 +70,7 @@ function App() {
     let root = document.querySelector("#root");
     root.addEventListener("scroll", () => {
       let scrollTop = root.scrollTop;
-      if (scrollTop > lastScrollTop) {
+      if (scrollTop > lastScrollTop || window.innerWidth > 800) {
         navbar.current.style.top = "-10vh";
       } else {
         navbar.current.style.top = "0";
