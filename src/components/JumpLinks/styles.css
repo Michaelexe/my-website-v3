@@ -12,7 +12,7 @@
 
 .jumpLinksDiv ol li {
   counter-increment: item 1;
-  font-family: Montserrat;
+  ;
   cursor: pointer;
   transition: color 100ms ease-in;
   font-size: 3.25vh;
