@@ -70,7 +70,7 @@ function App() {
     let root = document.querySelector("#root");
     root.addEventListener("scroll", () => {
       let scrollTop = root.scrollTop;
-      if (scrollTop > lastScrollTop || window.innerWidth > 800) {
+      if (scrollTop > lastScrollTop && window.innerWidth > 800) {
         navbar.current.style.top = "-10vh";
       } else {
         navbar.current.style.top = "0";
@@ -93,13 +93,19 @@ function App() {
       let root = document.querySelector("#root");
 
       root.removeEventListener("scroll", () => {
-        let scrollTop = root.scrollY || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-          navbar.style.top = "-10vh";
+        let scrollTop = root.scrollTop;
+        if (scrollTop > lastScrollTop && window.innerWidth > 800) {
+          navbar.current.style.top = "-10vh";
         } else {
-          navbar.style.top = "0";
+          navbar.current.style.top = "0";
         }
         lastScrollTop = scrollTop;
+
+        if (scrollTop > 500) {
+          navbar.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+        } else {
+          navbar.current.style.backgroundColor = "";
+        }
       });
     };
   }, [socialLinks, jumpLinks, introPage, navbar]);
