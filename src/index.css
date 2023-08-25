@@ -87,8 +87,13 @@ body {
   z-index: 20;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 720px) {
   .HTMLTags {
-    font-size: 25px;
+    font-size: 22px;
   }
+
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  
 }

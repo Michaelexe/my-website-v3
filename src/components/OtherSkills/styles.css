@@ -82,12 +82,21 @@
     flex-direction: column;
     height: fit-content;
   }
-
+  
   .otherSkillsTextDiv {
     order: 2;
     width: 100%;
-    padding: 20px;
+    padding: 2vh;
+    gap: 1vh;
   }
+
+  .otherSkillsTextDiv h1 {
+    font-size: 3.2vh;
+  }
+
+    .otherSkillsTextDiv p {
+      font-size: 2vh;
+    }
 
   .otherSkills__video {
     order: 1;

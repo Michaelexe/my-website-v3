@@ -89,6 +89,7 @@
 
     .navbar {
         position: absolute;
+        top: 0px;
         height: 55px;
         padding: 0px 10px;
         display: flex;

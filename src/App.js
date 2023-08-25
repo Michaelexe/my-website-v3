@@ -62,25 +62,26 @@ function App() {
     const navbarTarget = navbar.current;
     // const skillsContainerTarget = skillsContainer.current;
     const introPageTarget = introPage.current;
-    appearOnScroll.observe(navbarTarget);
-    appearOnScroll.observe(introPageTarget);
+    if (introPageTarget) appearOnScroll.observe(introPageTarget);
+    if (navbarTarget) appearOnScroll.observe(navbarTarget);
     // appearOnScroll.observe(skillsContainerTarget);
 
     var lastScrollTop = 0;
     let root = document.querySelector("#root");
     root.addEventListener("scroll", () => {
       let scrollTop = root.scrollTop;
-      if (scrollTop > lastScrollTop && window.innerWidth > 800) {
-        navbar.current.style.top = "-10vh";
-      } else {
-        navbar.current.style.top = "0";
-      }
-      lastScrollTop = scrollTop;
-
-      if (scrollTop > 500) {
-        navbar.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
-      } else {
-        navbar.current.style.backgroundColor = "";
+      if (navbar.current) {
+        if (scrollTop > lastScrollTop && window.innerWidth > 800) {
+          navbar.current.style.top = "-10vh";
+        } else {
+          navbar.current.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+        if (scrollTop > 500) {
+          navbar.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+        } else {
+          navbar.current.style.backgroundColor = "";
+        }
       }
     });
 

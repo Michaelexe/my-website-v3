@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay } from "swiper";
+
+import "swiper/swiper.min.css";
 import "./styles.css";
 import locaroImage from "./assets/locaroImage.png";
 import easyconnectImage from "./assets/easyconnect.png";
@@ -138,95 +142,69 @@ const projects = [
   },
 ];
 
-function ProjectsCard({ project, cardRef, setOpeneedProject }) {
+function ProjectsCard({ project, cardRef }) {
   return (
     <div
-      className="projectCards flexColumn fade-in"
+      className="project-cards fade-in"
       ref={(element) => {
         cardRef.current.push(element);
       }}
-      onClick={() => {
-        setOpeneedProject(project);
-      }}
     >
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
-      {project.svg}
-    </div>
-  );
-}
-
-function FullProjectCard({ project, setOpeneedProject }) {
-  return (
-    <div
-      className="overlay flex flex flexAlignCenter flexJustifyCenter"
-      onClick={(e) => {
-        if (e.target == e.currentTarget) {
-          setOpeneedProject();
-        }
-      }}
-    >
-      <div className="project-see-more">
-        <div></div>
-        <h1 className="project-see-more__title">
-          {project.title}{" "}
-          <a href={project.link}>
-            <svg
-              viewBox="0 0 16 16"
-              version="1.1"
-              width="16"
-              height="16"
-              aria-hidden="true"
-            >
-              <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
-            </svg>
-          </a>
-        </h1>
-        <p className="project-see-more__small-description">
-          {project.description}
-        </p>
-        {project.languages ? (
-          <div className="language-coverage">
-            <div className="language-coverage-bar">
-              {Object.keys(project.languages).map((language) => {
-                return (
+      <h1 className="title">
+        {project.title}{" "}
+        <a href={project.link}>
+          <svg
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="16"
+            height="16"
+            aria-hidden="true"
+          >
+            <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+          </svg>
+        </a>
+      </h1>
+      <p className="small-description">{project.description}</p>
+      {project.languages ? (
+        <div className="language-coverage">
+          <div className="language-coverage-bar">
+            {Object.keys(project.languages).map((language) => {
+              return (
+                <div
+                  style={{
+                    width: project.languages[language][0],
+                    backgroundColor: project.languages[language][1],
+                    height: "100%",
+                  }}
+                ></div>
+              );
+            })}
+          </div>
+          <div className="flex flexAlignCenter flexJustifyCenter language-coverage-text">
+            {Object.keys(project.languages).map((language) => {
+              return (
+                <div className="flex flexAlignCenter">
                   <div
                     style={{
-                      width: project.languages[language][0],
                       backgroundColor: project.languages[language][1],
-                      height: "100%",
                     }}
                   ></div>
-                );
-              })}
-            </div>
-            <div className="flex flexAlignCenter flexJustifyCenter language-coverage-text">
-              {Object.keys(project.languages).map((language) => {
-                return (
-                  <div className="flex flexAlignCenter">
-                    <div
-                      style={{
-                        backgroundColor: project.languages[language][1],
-                      }}
-                    ></div>
-                    <p>
-                      {language} : {project.languages[language][0]}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+                  <p>
+                    {language} : {project.languages[language][0]}
+                  </p>
+                </div>
+              );
+            })}
           </div>
-        ) : null}
-        {project.moreInfo}
-      </div>
+        </div>
+      ) : null}
+      {project.moreInfo}
     </div>
   );
 }
 
 function ProjectsPage() {
   const cards = useRef(new Array());
-  const [openedProject, setOpeneedProject] = useState();
 
   const appearOptions = {
     threshold: 0,
@@ -253,25 +231,43 @@ function ProjectsPage() {
 
   return (
     <section id="thirdPage" className="flexColumn flexJustifyAndAlignCenter">
-      <div id="projectsContainer">
-        <h1 className="HTMLTags">{"<projects>"}</h1>
-        {projects.map((project) => {
-          return (
-            <ProjectsCard
-              project={project}
-              cardRef={cards}
-              setOpeneedProject={setOpeneedProject}
-            />
-          );
-        })}
-        <h1 className="HTMLTags">{"</projects>"}</h1>
+      <div className="projectsContainer flexColumn">
+        <h1 className="HTMLTags" style={{ marginLeft: "12.5%" }}>
+          {"<projects>"}
+        </h1>
+        <Swiper
+          effect={"coverflow"}
+          autoplay={{
+            delay: 2000,
+          }}
+          centeredSlides={true}
+          spaceBetween={40}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          modules={[EffectCoverflow, Autoplay]}
+          className="project-swiper"
+        >
+          {projects.map((project) => {
+            return (
+              <SwiperSlide>
+                <ProjectsCard project={project} cardRef={cards} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <h1
+          className="HTMLTags"
+          style={{ marginLeft: "auto", marginRight: "12.5%" }}
+        >
+          {"</projects>"}
+        </h1>
       </div>
-      {openedProject ? (
-        <FullProjectCard
-          project={openedProject}
-          setOpeneedProject={setOpeneedProject}
-        />
-      ) : null}
     </section>
   );
 }

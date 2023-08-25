@@ -1,10 +1,10 @@
 .work-container {
     margin: 0px auto;
-    width: 80%;
+    width: 75%;
 }
 
 .work-container__main {
-    width: 80%;
+    width: 85%;
     margin: 10vh auto;
 }
 
@@ -103,7 +103,7 @@
     }
 
     .work-container__content h1 {
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
 
     .work-container__content p {
@@ -111,6 +111,15 @@
     }
 
     .work-container__content li {
-        font-size: 2.2vh;
+        font-size: 2vh;
+        padding: 1vh 0vh 1vh 3vh;
+    }
+    
+    .work-container__content ul {
+        margin-top: 2vh;
+    }
+
+    .work-container__tabs__tab {
+        font-size: 2vh !important;
     }
 }
