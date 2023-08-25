@@ -15,6 +15,7 @@
 
 .project-swiper .swiper-slide {
   width: 60%;
+  height: 60vh !important;
   border-radius: 10px !important;
   overflow: hidden;
 }
@@ -68,7 +69,7 @@
   font-size: 4vh;
 }
 
-.project-cards > .small-description {
+.project-cards > p {
   font-size:  2.4vh;
 }
 
@@ -114,7 +115,7 @@
   row-gap: 7px;
   flex-wrap: wrap;
   color: white;
-  font-size: 2vh;
+  font-size: 2vh !important;
 }
 
 .language-coverage-text div>div {
@@ -139,24 +140,26 @@
     padding: 2vh;
   }
 
+  .project-cards > .title {
+    font-size: 3vh;
+  }
+
   .project-cards h1 {
+    font-size: 2.4vh;
+  }
+
+  .project-cards > p {
+    width: fit-content;
     font-size: 2vh;
   }
 
-  .project-cards p {
-    width: fit-content;
-    font-size: 15px;
+  .project-cards li {
+    font-size: 2vh;
   }
-
-  .project-see-more {
-    padding: 30px 15px;
-  }
-
-  .project-see-more__title {
-    font-size: 28px;
-  }
-
-  .project-see-more__small-description {
-    font-size: 17px;
+  
+  .language-coverage-text {
+    row-gap: 4px;
+    column-gap: 10px;
+    font-size: 1.8vh !important;
   }
 }
