@@ -1,4 +1,5 @@
 .jumpLinksDiv {
+  margin-left: 20px;
   width: fit-content;
   z-index: 10;
 }
