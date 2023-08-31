@@ -1,34 +1,32 @@
 .socialLinksDiv {
-  position: absolute;
-  right: 2.4vh;
-  gap: 3vh;
+  align-items: center;
+  margin: 0 20px 0 auto;
+  gap: 20px;
   z-index: 10;
 }
 
 .socialLinksDiv h1 {
   position: relative;
-  right: 13.5vh;
+  right: 100px;
   color: var(--color-3);
-  margin-top: 1.2vh;
-  ;
   font-weight: 400;
-  font-size: 2.8vh;
+  font-size: 20px;
 }
 
 .socialLinksDiv h1::after {
   position: relative;
-  left: 14.5vh;
-  bottom: 1.7vh;
+  left: 105px;
+  bottom: 13px;
   content: "";
   display: block;
-  width: 15vh;
-  height: 0.4vh;
+  width: 100px;
+  height: 4px;
   background-color: var(--color-3);
 }
 
 .linkSVG {
-  height: 5.3vh;
-  width: 5.3vh;
+  height: 40px;
+  width: 40px;
   fill: var(--color-3);
   transition: all 100ms ease-in;
 }
@@ -38,7 +36,7 @@
   transform: scale(1.2);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .socialLinksDiv {
     display: none;
   }

@@ -1,11 +1,12 @@
 .work-container {
     margin: 0px auto;
-    width: 75%;
+    width: 95%;
+    max-width: 1000px;
 }
 
 .work-container__main {
-    width: 85%;
-    margin: 10vh auto;
+    width: 90%;
+    margin: 30px auto;
 }
 
 .work-container__tabs {
@@ -24,9 +25,9 @@
     font-family: Montserrat !important;
     font-weight: 700 !important;
     transition: all 150ms ease-in !important;
-    padding: 1.7vh 2.5vh 1.7vh 1.7vh;
-    font-size: 2.2vh !important;
-    line-height: 2.2vh !important;
+    padding: 10px 20px 10px 10px;
+    font-size: 18px !important;
+    line-height: 18px !important;
     align-items: flex-end !important;
 }
 
@@ -40,30 +41,30 @@
 
 .work-container__content {
     color: white;
-    padding: 0 1.5vh;
-    padding-left: 2.5vh;
+    padding: 0 10px;
+    padding-left: 20px;
 }
 
 .work-container__content h1 {
-    font-size: 5vh;
+    font-size: 35px;
     color: var(--color-3);
 }
 
 .work-container__content p {
-    font-size: 2.5vh;
-    margin: 1vh 0;
+    font-size: 18px;
+    margin: 5px 0;
     color: var(--color-4);
 }
 
 .work-container__content ul {
     list-style: none;
-    margin-top: 3vh;
+    margin-top: 20px;
 }
 
 .work-container__content li {
     position: relative;
-    padding: 1.5vh 0 1.5vh 3vh;
-    font-size: 3vh;
+    padding: 10px 0 10px 25px;
+    font-size: 22px;
 }
 
 .work-container__content li::before {
@@ -73,19 +74,16 @@
     left: 0;
 }
 
-@media (max-width: 1050px) {
-    .work-container {
-        width: 95%;
-    }
+@media (max-width: 1000px) {
 
     .work-container__main {
         flex-direction: column;
         width: 100%;
-        margin: 2vh auto;
+        margin: 20px auto;
     }
 
     .work-container__tabs {
-        margin-bottom: 2vh !important;
+        margin-bottom: 20px !important;
     }
 
     .work-container__tabs__tab {
@@ -103,16 +101,16 @@
     }
 
     .work-container__content h1 {
-        font-size: 3vh;
+        font-size: 24px;
     }
 
     .work-container__content p {
-        font-size: 1.75vh;
+        font-size: 14px;
     }
 
     .work-container__content li {
-        font-size: 2vh;
-        padding: 1vh 0vh 1vh 3vh;
+        font-size: 16px;
+        padding: 10px 0vh 10px 25px;
     }
     
     .work-container__content ul {

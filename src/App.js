@@ -1,15 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
-import WAVES from "vanta/dist/vanta.waves.min";
+import NET from "vanta/dist/vanta.net.min";
 
 import "./App.css";
 
-import IntroPage from "./components/IntroPage.js";
-import JumpLinks from "./components/JumpLinks/index.js";
+import IntroPage from "./components/IntroPage";
 import Navbar from "./components/Navbar";
 import OtherSkills from "./components/OtherSkills";
 import ProjectsPage from "./components/ProjectsPage/index.js";
 import SkillsPage from "./components/SkillsPage";
-import SocialLinks from "./components/SocialLinks/index.js";
 import WorkPage from "./components/WorkPage";
 
 function App() {
@@ -18,7 +16,7 @@ function App() {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        WAVES({
+        NET({
           el: document.body,
           mouseControls: true,
           touchControls: true,
@@ -26,9 +24,12 @@ function App() {
           minHeight: 200.0,
           minWidth: 200.0,
           scale: 1.0,
-          scaleMobile: 1.0,
-          color: 0x011627,
-          zoom: 1.18,
+          scaleMobile: 1,
+          color: 0x3e79cc,
+          backgroundColor: 0x011627,
+          points: 12.0,
+          maxDistance: 18.0,
+          spacing: 16.0,
         })
       );
     }

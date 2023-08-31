@@ -5,22 +5,25 @@
 }
 
 .otherSkillsContainer {
-  margin: 10vh 0vh;
+  margin: 80px 0vh;
   position: relative;
-  width: 85%;
+  width: 95%;
+  max-width: 1000px;
   height: fit-content;
 }
 
 .otherSkillsDiv {
   position: relative;
   transform: translateX(-50%);
-  width: 75%;
+  width: 100%;
+  max-width: 900px;
   height: 400px;
   background-color: var(--color-2);
   overflow: hidden;
   opacity: 0;
   transition: all 500ms ease-in;
   display: flex;
+  box-shadow: 0px 0px 20px black;
 }
 
 .otherSkillsTextDiv {
@@ -37,7 +40,7 @@
 }
 
 .otherSkillsTextDiv p {
-  font-size: 23px;
+  font-size: 20px;
   color: var(--color-3);
 }
 
@@ -86,17 +89,17 @@
   .otherSkillsTextDiv {
     order: 2;
     width: 100%;
-    padding: 2vh;
-    gap: 1vh;
+    padding: 15px 10px;
+    gap: 5px;
   }
 
   .otherSkillsTextDiv h1 {
-    font-size: 3.2vh;
+    font-size: 24px;
   }
 
-    .otherSkillsTextDiv p {
-      font-size: 2vh;
-    }
+  .otherSkillsTextDiv p {
+    font-size: 16px;
+  }
 
   .otherSkills__video {
     order: 1;

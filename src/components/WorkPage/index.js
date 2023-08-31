@@ -17,7 +17,7 @@ function WorkPage() {
             onChange={(e, newValue) => {
               setCurrentTab(newValue);
             }}
-            orientation={window.innerWidth > 1050 ? "vertical" : "horizontal"}
+            orientation={window.innerWidth > 1000 ? "vertical" : "horizontal"}
             className="work-container__tabs"
           >
             <Tab

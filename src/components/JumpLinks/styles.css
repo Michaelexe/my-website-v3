@@ -1,21 +1,18 @@
 .jumpLinksDiv {
-  position: absolute;
-  left: 6vh;
   width: fit-content;
   z-index: 10;
 }
 
 .jumpLinksDiv ol {
-  gap: 6vh;
+  gap: 35px;
   list-style: none;
 }
 
 .jumpLinksDiv ol li {
   counter-increment: item 1;
-  ;
   cursor: pointer;
   transition: color 100ms ease-in;
-  font-size: 3.25vh;
+  font-size: 22px;
 }
 
 .jumpLinksDiv ol li a {
@@ -32,10 +29,10 @@
 .jumpLinksDiv ol li::before {
   content: "0" counter(item) ".";
   color: var(--color-5);
-  margin-right: 0.825vh;
+  margin-right: 6px;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
   .jumpLinksDiv {
     display: none;
   }

@@ -5,12 +5,15 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  max-height: 1080px;
 }
 
 #introContainer {
-  width: 75%;
+  width: calc(100% - 10px);
   height: 60%;
-  gap: 6vh;
+  max-height: 648px;
+  max-width: 1000px;
+  gap: 30px;
 }
 
 .introText {
@@ -20,37 +23,37 @@
 }
 
 #introContainer h2 {
-  margin-top: 1.65vh;
-  margin-left: 3.25vh;
-  font-size: 5.5vh;
+  margin-left: 30px;
+  font-size: 40px;
   color: var(--color-4);
 }
 
 #introContainer h3 {
-  margin-left: 3.25vh;
-  font-size: 6vh;
+  margin-left: 30px;
+  font-size: 44px;
   color: var(--color-3);
 }
 
 #introContainer p {
-  margin: 3.25vh 0px;
+  margin: 20px 0px 5px 30px;
   color: var(--color-3);
-  margin-left: 3.25vh;
-  font-size: 3.5vh;
+  font-size: 26px;
 }
 
 .introImageDiv {
   width: 35%;
   height: 100%;
+  flex-shrink: 0;
 }
 
 .introImageDiv img {
   border-radius: 50%;
   width: 100%;
   aspect-ratio: 1;
+  box-shadow: 0px 0px 20px black;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 800px) {
   #firstPage {
     position: relative;
     height: fit-content;
@@ -71,18 +74,18 @@
   }
 
   #introContainer h2 {
-    font-size: 3.5vh;
-    margin: 0px 3%;
+    font-size: 28px;
+    margin: 0px 10px;
   }
 
   #introContainer h3 {
-    font-size: 3.5vh;
-    margin: 0px 3%;
+    font-size: 30px;
+    margin: 0px 10px;
   }
 
   #introContainer p {
-    font-size: 2.2vh;
-    margin: 3%;
+    font-size: 18px;
+    margin: 10px;
     margin-bottom: 0;
   }
 

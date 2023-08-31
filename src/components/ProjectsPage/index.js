@@ -232,7 +232,15 @@ function ProjectsPage() {
   return (
     <section id="thirdPage" className="flexColumn flexJustifyAndAlignCenter">
       <div className="projectsContainer flexColumn">
-        <h1 className="HTMLTags" style={{ marginLeft: "12.5%" }}>
+        <h1
+          className="HTMLTags"
+          style={{
+            marginLeft:
+              window.innerWidth > 980
+                ? `${(window.innerWidth - 980) / 2}px`
+                : "5px",
+          }}
+        >
           {"<projects>"}
         </h1>
         <Swiper
@@ -263,7 +271,13 @@ function ProjectsPage() {
         </Swiper>
         <h1
           className="HTMLTags"
-          style={{ marginLeft: "auto", marginRight: "12.5%" }}
+          style={{
+            marginLeft: "auto",
+            marginRight:
+              window.innerWidth > 980
+                ? `${(window.innerWidth - 980) / 2}px`
+                : "5px",
+          }}
         >
           {"</projects>"}
         </h1>
