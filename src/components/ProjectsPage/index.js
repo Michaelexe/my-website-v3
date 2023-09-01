@@ -12,9 +12,33 @@ const projects = [
   {
     title: "Locaro",
     description:
-      "Locaro is an hyperlocal eCommerce platform that allows small shops in your area to sell their products online. Single handedly made the entire front end (consisting of three clients) in 4 months.",
+      "Locaro is a hyperlocal eCommerce platform that allows small shops in your area to sell their products online. It is an attempt to allow the offline retail market have a chance to compete with eCommerce giants such as Amazon.",
     svg: <img src={locaroImage} alt="locaro" className="projectSVG" />,
     link: "https://locaro.in",
+    moreInfo: (
+      <div style={{ width: "100%", textAlign: "left" }}>
+        <h1 style={{ margin: "10px 0" }}>Features</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+          <li>Delivery times as low as 30 minutes</li>
+          <li>Easy way to compare prices out of the stores near them</li>
+          <li>
+            A chance for small offline shops to compete against the online
+            market
+          </li>
+          <li>Cheap promotions for shops</li>
+        </ul>
+        <h1 style={{ marginBottom: "10px" }}>Libraries and Tools used</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+          <li>React for front-end</li>
+          <li>Express for back-end </li>
+          <li>PostgreSQL</li>
+        </ul>
+        <h1 style={{ marginBottom: "10px" }}>Awards</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+          <li>Best Student Startup Award (VITAP 2022-2023)</li>
+        </ul>
+      </div>
+    ),
   },
   {
     title: "EasyConnect",
