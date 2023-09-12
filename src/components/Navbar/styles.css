@@ -41,6 +41,7 @@
     z-index: 10;
     gap: 20px;
     animation: fade-in 400ms ease-in;
+    padding: 10px;
 }
 
 @keyframes fade-in {
