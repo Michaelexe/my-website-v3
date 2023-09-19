@@ -1,32 +1,22 @@
 {
   "files": {
-    "main.css": "/my-website-v3/static/css/main.374ac2c7.chunk.css",
-    "main.js": "/my-website-v3/static/js/main.7ec795ab.chunk.js",
-    "main.js.map": "/my-website-v3/static/js/main.7ec795ab.chunk.js.map",
-    "runtime-main.js": "/my-website-v3/static/js/runtime-main.96b7a90c.js",
-    "runtime-main.js.map": "/my-website-v3/static/js/runtime-main.96b7a90c.js.map",
-    "static/css/2.fb7fd29c.chunk.css": "/my-website-v3/static/css/2.fb7fd29c.chunk.css",
-    "static/js/2.4394bbb0.chunk.js": "/my-website-v3/static/js/2.4394bbb0.chunk.js",
-    "static/js/2.4394bbb0.chunk.js.map": "/my-website-v3/static/js/2.4394bbb0.chunk.js.map",
+    "main.css": "/my-website-v3/static/css/main.3911d3e0.css",
+    "main.js": "/my-website-v3/static/js/main.9950e67c.js",
+    "static/media/let-me-down-slowly.mp4": "/my-website-v3/static/media/let-me-down-slowly.c7b002340cb419401729.mp4",
+    "static/media/goose.mp4": "/my-website-v3/static/media/goose.e78f587dbb4e0930c89d.mp4",
+    "static/media/gooseGuitar.mp4": "/my-website-v3/static/media/gooseGuitar.e78f587dbb4e0930c89d.mp4",
+    "static/media/jdsc.mp4": "/my-website-v3/static/media/jdsc.1105700ec803211ba5c8.mp4",
+    "static/media/glimpse-of-us.mp4": "/my-website-v3/static/media/glimpse-of-us.e91bfca053faa9dbeb78.mp4",
+    "static/media/icronic.mp4": "/my-website-v3/static/media/icronic.183715c3d8138e648aa5.mp4",
+    "static/media/myImage3.jpg": "/my-website-v3/static/media/myImage3.46e9d59e2595047bd640.jpg",
+    "static/media/chess.jpg": "/my-website-v3/static/media/chess.638d9592e9a4a834590f.jpg",
+    "static/media/logo.png": "/my-website-v3/static/media/logo.3e3b764ed858566e50fb.png",
     "index.html": "/my-website-v3/index.html",
-    "static/css/2.fb7fd29c.chunk.css.map": "/my-website-v3/static/css/2.fb7fd29c.chunk.css.map",
-    "static/css/main.374ac2c7.chunk.css.map": "/my-website-v3/static/css/main.374ac2c7.chunk.css.map",
-    "static/js/2.4394bbb0.chunk.js.LICENSE.txt": "/my-website-v3/static/js/2.4394bbb0.chunk.js.LICENSE.txt",
-    "static/media/chess.638d9592.jpg": "/my-website-v3/static/media/chess.638d9592.jpg",
-    "static/media/glimpse-of-us.e91bfca0.mp4": "/my-website-v3/static/media/glimpse-of-us.e91bfca0.mp4",
-    "static/media/goose.e78f587d.mp4": "/my-website-v3/static/media/goose.e78f587d.mp4",
-    "static/media/gooseGuitar.e78f587d.mp4": "/my-website-v3/static/media/gooseGuitar.e78f587d.mp4",
-    "static/media/icronic.183715c3.mp4": "/my-website-v3/static/media/icronic.183715c3.mp4",
-    "static/media/jdsc.1105700e.mp4": "/my-website-v3/static/media/jdsc.1105700e.mp4",
-    "static/media/let-me-down-slowly.c7b00234.mp4": "/my-website-v3/static/media/let-me-down-slowly.c7b00234.mp4",
-    "static/media/logo.3e3b764e.png": "/my-website-v3/static/media/logo.3e3b764e.png",
-    "static/media/myImage3.46e9d59e.jpg": "/my-website-v3/static/media/myImage3.46e9d59e.jpg"
+    "main.3911d3e0.css.map": "/my-website-v3/static/css/main.3911d3e0.css.map",
+    "main.9950e67c.js.map": "/my-website-v3/static/js/main.9950e67c.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.96b7a90c.js",
-    "static/css/2.fb7fd29c.chunk.css",
-    "static/js/2.4394bbb0.chunk.js",
-    "static/css/main.374ac2c7.chunk.css",
-    "static/js/main.7ec795ab.chunk.js"
+    "static/css/main.3911d3e0.css",
+    "static/js/main.9950e67c.js"
   ]
 }
