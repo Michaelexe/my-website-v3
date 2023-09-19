@@ -33,7 +33,10 @@ const videos = [
 
 function Guitar() {
   return (
-    <div className="guitar-container flex flexJustifyAndAlignCenter">
+    <div
+      className="guitar-container flex flexJustifyAndAlignCenter"
+      id="guitar"
+    >
       <div className="guitar flexColumn">
         <h1 className="HTMLTags">{"<Guitar>"}</h1>
         <div className="grid">

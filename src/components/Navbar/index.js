@@ -43,13 +43,13 @@ function Navbar({ navbar }) {
             Introduction
           </a>
           <a href="#secondPage" className="menu__jumps">
-            Work Experience
+            Work
           </a>
           <a href="#thirdPage" className="menu__jumps">
             Projects
           </a>
-          <a href="#forthPage" className="menu__jumps">
-            Other Skills
+          <a href="#guitar" className="menu__jumps">
+            Guitar
           </a>
           <div className="menu__socials flex flexAlignCenter">
             <a
