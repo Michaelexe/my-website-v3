@@ -36,6 +36,7 @@
   color: var(--color-4);
   overflow-y: auto;
   border-radius: 10px;
+  box-shadow: inset 0px 0px 200px #000d17;
 }
 
 .project-cards h1 {
@@ -158,6 +159,7 @@
 
   .project-cards li {
     font-size: 14px;
+    margin-bottom: 5px;
   }
   
   .language-coverage-text {

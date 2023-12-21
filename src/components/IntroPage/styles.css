@@ -10,8 +10,6 @@
 
 #introContainer {
   width: calc(100% - 10px);
-  height: 60%;
-  max-height: 648px;
   max-width: 1000px;
   gap: 30px;
 }
@@ -42,7 +40,6 @@
 
 .introImageDiv {
   width: 35%;
-  height: 100%;
   flex-shrink: 0;
 }
 

@@ -68,10 +68,12 @@
 }
 
 .work-container__content li::before {
-    content: '▹';
+    content: "\2023";
     color: var(--color-5);
     position: absolute;
+    font-size: 40px;
     left: 0;
+    top: -2px;
 }
 
 @media (max-width: 1000px) {
@@ -110,11 +112,15 @@
 
     .work-container__content li {
         font-size: 16px;
-        padding: 10px 0vh 10px 25px;
+    }
+
+    .work-container__content li::before {
+        font-size: 25px;
+        top: 4px;
     }
     
     .work-container__content ul {
-        margin-top: 2vh;
+        margin-top: 15px;
     }
 
     .work-container__tabs__tab {

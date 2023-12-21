@@ -3,10 +3,9 @@ import React from "react";
 import "./styles.css";
 import myImage from "./assets/myImage3.jpg";
 
-function IntroPage(props) {
-  const { introPage } = props;
+function IntroPage() {
   return (
-    <section id="firstPage" className="fade-in" ref={introPage}>
+    <section id="firstPage">
       <div id="introContainer" className="flex">
         <div className=" introText flexColumn">
           <h1 className="HTMLTags">{"<intro>"}</h1>
@@ -25,7 +24,7 @@ function IntroPage(props) {
           <h1 className="HTMLTags">{"</intro>"}</h1>
         </div>
         <div className="introImageDiv flex flexJustifyAndAlignCenter">
-          <img src={myImage} alt="" />
+          <img src={myImage} alt="" loading="eager" />
         </div>
       </div>
     </section>

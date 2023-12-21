@@ -6,12 +6,12 @@ import JumpLinks from "../JumpLinks/index.js";
 import "./styles.css";
 import logo from "../../assets/logo.png";
 
-function Navbar({ navbar }) {
+function Navbar({ navbarRef }) {
   const [menu, setMenu] = useState(false);
   const menuRef = useRef();
   return (
     <>
-      <div className="navbar flex fade-in" ref={navbar}>
+      <div className="navbar flex" ref={navbarRef}>
         <img src={logo} alt="" />
         <svg
           xmlns="http://www.w3.org/2000/svg"

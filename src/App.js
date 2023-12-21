@@ -13,6 +13,7 @@ import Guitar from "./components/Guitar";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
+  const navbarRef = useRef();
 
   useEffect(() => {
     if (!vantaEffect) {
@@ -39,84 +40,52 @@ function App() {
     };
   }, [vantaEffect]);
 
-  const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -100px 0px",
-  };
-
-  const navbar = useRef();
-  const socialLinks = useRef();
-  const jumpLinks = useRef();
-  const introPage = useRef();
-
-  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-      }
-    });
-  }, appearOptions);
-
   useEffect(() => {
-    const navbarTarget = navbar.current;
-    // const skillsContainerTarget = skillsContainer.current;
-    const introPageTarget = introPage.current;
-    if (introPageTarget) appearOnScroll.observe(introPageTarget);
-    if (navbarTarget) appearOnScroll.observe(navbarTarget);
-    // appearOnScroll.observe(skillsContainerTarget);
-
-    var lastScrollTop = 0;
+    let lastScrollTop = 0;
     let root = document.querySelector("#root");
     root.addEventListener("scroll", () => {
       let scrollTop = root.scrollTop;
-      if (navbar.current) {
+      if (navbarRef.current) {
         if (scrollTop > lastScrollTop && window.innerWidth > 800) {
-          navbar.current.style.top = "-10vh";
+          navbarRef.current.style.top = "-10vh";
         } else {
-          navbar.current.style.top = "0";
+          navbarRef.current.style.top = "0";
         }
         lastScrollTop = scrollTop;
         if (scrollTop > 500) {
-          navbar.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+          navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
         } else {
-          navbar.current.style.backgroundColor = "";
+          navbarRef.current.style.backgroundColor = "";
         }
       }
     });
 
     return () => {
-      if (introPageTarget) appearOnScroll.unobserve(introPageTarget);
-      if (navbarTarget) appearOnScroll.unobserve(navbarTarget);
-      // if (skillsContainerTarget)
-      //   appearOnScroll.unobserve(skillsContainerTarget);
-
+      let lastScrollTop = 0;
       let root = document.querySelector("#root");
-
       root.removeEventListener("scroll", () => {
         let scrollTop = root.scrollTop;
-        if (scrollTop > lastScrollTop && window.innerWidth > 800) {
-          navbar.current.style.top = "-10vh";
-        } else {
-          navbar.current.style.top = "0";
-        }
-        lastScrollTop = scrollTop;
-
-        if (scrollTop > 500) {
-          navbar.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
-        } else {
-          navbar.current.style.backgroundColor = "";
+        if (navbarRef.current) {
+          if (scrollTop > lastScrollTop && window.innerWidth > 800) {
+            navbarRef.current.style.top = "-10vh";
+          } else {
+            navbarRef.current.style.top = "0";
+          }
+          lastScrollTop = scrollTop;
+          if (scrollTop > 500) {
+            navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+          } else {
+            navbarRef.current.style.backgroundColor = "";
+          }
         }
       });
     };
-  }, [socialLinks, jumpLinks, introPage, navbar]);
+  }, []);
 
   return (
     <>
-      <Navbar navbar={navbar} />
-      <IntroPage introPage={introPage} />
+      <Navbar navbarRef={navbarRef} />
+      <IntroPage />
       <WorkPage />
       <ProjectsPage />
       {/* <OtherSkills /> */}

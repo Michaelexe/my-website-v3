@@ -42,12 +42,7 @@ function Guitar() {
         <div className="grid">
           {videos.map((video) => (
             <div className="card flexColumn flexAlignCenter">
-              <video
-                src={video.file}
-                type="video/mp4"
-                controls
-                preload="metadata"
-              />
+              <video src={video.file} type="video/mp4" controls />
               <span>{video.text}</span>
             </div>
           ))}

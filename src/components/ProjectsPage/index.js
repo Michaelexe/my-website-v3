@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Autoplay } from "swiper";
+import { EffectCoverflow, Autoplay, Pagination } from "swiper";
 
 import "swiper/swiper.min.css";
 import "./styles.css";
@@ -17,8 +17,8 @@ const projects = [
     link: "https://locaro.in",
     moreInfo: (
       <div style={{ width: "100%", textAlign: "left" }}>
-        <h1 style={{ margin: "10px 0" }}>Features</h1>
-        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+        <h1 style={{ margin: "20px 0 10px 0" }}>Features</h1>
+        <ul style={{ paddingLeft: "15px", marginBottom: "20px" }}>
           <li>Delivery times as low as 30 minutes</li>
           <li>Easy way to compare prices out of the stores near them</li>
           <li>
@@ -28,7 +28,7 @@ const projects = [
           <li>Cheap promotions for shops</li>
         </ul>
         <h1 style={{ marginBottom: "10px" }}>Libraries and Tools used</h1>
-        <ul style={{ paddingLeft: "15px", marginBottom: "10px" }}>
+        <ul style={{ paddingLeft: "15px", marginBottom: "20px" }}>
           <li>React for front-end</li>
           <li>Express for back-end </li>
           <li>PostgreSQL</li>
@@ -166,14 +166,9 @@ const projects = [
   },
 ];
 
-function ProjectsCard({ project, cardRef }) {
+function ProjectsCard({ project }) {
   return (
-    <div
-      className="project-cards fade-in"
-      ref={(element) => {
-        cardRef.current.push(element);
-      }}
-    >
+    <div className="project-cards">
       <h1 className="title">
         {project.title}{" "}
         <a href={project.link}>
@@ -228,31 +223,6 @@ function ProjectsCard({ project, cardRef }) {
 }
 
 function ProjectsPage() {
-  const cards = useRef(new Array());
-
-  const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -20% 0px",
-  };
-
-  const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add("appear");
-        appearOnScroll.unobserve(entry.target);
-      }
-    });
-  }, appearOptions);
-
-  useEffect(() => {
-    cards.current.forEach((card) => {
-      appearOnScroll.observe(card);
-    });
-    console.log(cards);
-  }, []);
-
   return (
     <section id="thirdPage" className="flexColumn flexJustifyAndAlignCenter">
       <div className="projectsContainer flexColumn">
@@ -282,13 +252,13 @@ function ProjectsPage() {
             modifier: 1,
             slideShadows: true,
           }}
-          modules={[EffectCoverflow, Autoplay]}
+          modules={[EffectCoverflow, Autoplay, Pagination]}
           className="project-swiper"
         >
           {projects.map((project) => {
             return (
               <SwiperSlide>
-                <ProjectsCard project={project} cardRef={cards} />
+                <ProjectsCard project={project} />
               </SwiperSlide>
             );
           })}
