@@ -19,7 +19,23 @@ function WorkPage() {
             }}
             orientation={window.innerWidth > 1000 ? "vertical" : "horizontal"}
             className="work-container__tabs"
+            variant="scrollable"
+            scrollButtons={false}
           >
+            <Tab
+              label="Academic Oasis"
+              value="ao"
+              className={`work-container__tabs__tab ${
+                currentTab === "ao" ? "active" : ""
+              }`}
+            />
+            <Tab
+              label="Freelancer"
+              value="free"
+              className={`work-container__tabs__tab ${
+                currentTab === "free" ? "active" : ""
+              }`}
+            />
             <Tab
               label="Locaro"
               value="locaro"

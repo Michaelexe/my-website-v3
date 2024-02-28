@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { animate, motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay, Pagination } from "swiper";

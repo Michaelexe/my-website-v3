@@ -1,18 +1,54 @@
 {
-    "locaro": {
-        "organisation": "Locaro",
-        "order": 0,
-        "position": "Software Developer / Co-Founder",
-        "start_date": "Sept 2021",
-        "end_date": "Present",
-        "description": ["Created a hyperlocal eCommerce platform that allows small shops in your area to sell their products online. www.locaro.in.", "Actively learnt new programming skills almost everyday.", "Constantly looked for bugs and ways to improve the product for the best user experience"]
-    },
-    "qzense": {
-        "organisation": "Qzense Labs",
-        "order": 1,
-        "position": "Front End Intern",
-        "start_date": "May 2022",
-        "end_date": "Aug 2022",
-        "description": ["Created an application for corporate farmers to keep track of the quality of their farms.", "Worked at a start up. Hence, I was always busy and had to learn new things.", "Constantly had to come up with new ideas."]
-    }
+  "ao": {
+    "organisation": "Academic Oasis",
+    "order": 0,
+    "position": "CTO / Lead Software Developer",
+    "start_date": "Jan 2024",
+    "end_date": "Present",
+    "description": [
+      "Managed and developed a comprehensive academic progress tracker, enabling students to monitor grades, assignments, and overall performance seamlessly.",
+      "Designed and integrated a dynamic scheduling feature allowing students to input and manage class schedules, assignment due dates, and important events efficiently.",
+      "Orchestrated engaging workshops focused on diverse programming skills, fostering a collaborative environment for students to enhance their technical abilities.",
+      "Empowered the community by providing skill development opportunities, contributing to the growth and proficiency of participants."
+    ]
+  },
+  "free": {
+    "organisation": "",
+    "order": 1,
+    "position": "Freelance Web Developer",
+    "start_date": "May 2023",
+    "end_date": "Present",
+    "description": [
+      "Independently manage and execute web development projects, ensuring timely delivery and client satisfaction.",
+      "Develop customized, responsive websites tailored to clients' specific needs, ensuring optimal user experience across various devices and browsers.",
+      "Implement SEO best practices to enhance website visibility and improve search engine rankings, contributing to increased organic traffic."
+    ]
+  },
+  "locaro": {
+    "organisation": "Locaro",
+    "order": 2,
+    "position": "Software Developer / Co-Founder",
+    "start_date": "Sept 2021",
+    "end_date": "Present",
+    "description": [
+      "Locaro is a hyperlocal eCommerce platform that allows nearby shops and stores to sell their products online through us.",
+
+      "Founded and developed a hyperlocal eCommerce platform, allowing small shops to sell their products online and deliver within 30-40 minutes.",
+      "Awarded the Best Student Start-up Award for the academic year 2022-2023 at VITAP.",
+      "Completed the MVP within a tight deadline of 4 months by working 12 hours daily."
+    ]
+  },
+  "qzense": {
+    "organisation": "Qzense Labs",
+    "order": 3,
+    "position": "Front End Intern",
+    "start_date": "May 2022",
+    "end_date": "Aug 2022",
+    "description": [
+      "Designed and developed a web application for corporate farmers to improve their farms through data analytics and visualization.",
+      "Boosted the company’s productivity by completing the prototype 1 month ahead of deadline.",
+      "Successfully resolved over 20 bugs across multiple pre-existing web applications.",
+      "Learned over 10 new libraries to add and improve functionality."
+    ]
+  }
 }

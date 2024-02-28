@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useScroll } from "framer-motion";
 
 import SocialLinks from "../SocialLinks/index.js";
 import JumpLinks from "../JumpLinks/index.js";
@@ -9,6 +10,14 @@ import logo from "../../assets/logo.png";
 function Navbar({ navbarRef }) {
   const [menu, setMenu] = useState(false);
   const menuRef = useRef();
+  const rootRef = useRef(document.getElementById("root"));
+  const { scrollYProgress } = useScroll({
+    container: rootRef,
+  });
+
+  useEffect(() => {
+    console.log(scrollYProgress);
+  }, [scrollYProgress]);
   return (
     <>
       <div className="navbar flex" ref={navbarRef}>

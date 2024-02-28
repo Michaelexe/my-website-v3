@@ -74,10 +74,11 @@ body {
   color: var(--color-5);
   font-weight: 400;
   margin: 1vh 0px;
+  text-shadow: 0px 0px 5px var(--color-5);
 }
 
 .overlay {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -91,8 +92,7 @@ body {
     font-size: 22px;
   }
 
-    ::-webkit-scrollbar {
-      width: 0px;
-    }
-  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 }
