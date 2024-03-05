@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 import letMeDownSlowly from "./assets/let-me-down-slowly.mp4";
@@ -43,6 +43,15 @@ function Guitar() {
     once: true,
     margin: "0px 0px -400px 0px",
   });
+  const [play, setPlay] = useState();
+
+  useEffect(() => {
+    document.querySelectorAll("video").forEach((vid) => vid.pause());
+    if (play) {
+      document.getElementById(play).play();
+    }
+  }, [play]);
+
   return (
     <div
       className="guitar-container flex flexJustifyAndAlignCenter"
@@ -62,7 +71,8 @@ function Guitar() {
               animate={
                 inView
                   ? {
-                      opacity: 1,
+                      opacity: play === `video-${index}` ? 1 : 0.8,
+                      scale: play === `video-${index}` ? 1.03 : 1,
                       y: 0,
                     }
                   : null
@@ -71,9 +81,28 @@ function Guitar() {
                 delay: 0.2 * index,
                 type: "spring",
               }}
+              onClick={() => {
+                if (play === `video-${index}`) {
+                  setPlay();
+                } else {
+                  setPlay(`video-${index}`);
+                }
+              }}
+              style={
+                play === `video-${index}`
+                  ? {
+                      opacity: 1,
+                    }
+                  : null
+              }
             >
-              <video src={video.file} type="video/mp4" controls />
+              <video src={video.file} type="video/mp4" id={`video-${index}`} />
               <span>{video.text}</span>
+              {play !== `video-${index}` ? (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z" />
+                </svg>
+              ) : null}
             </motion.div>
           ))}
         </div>
