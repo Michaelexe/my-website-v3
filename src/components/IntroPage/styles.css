@@ -10,7 +10,7 @@
 
 #introContainer {
   width: calc(100% - 10px);
-  max-width: 1000px;
+  max-width: 1100px;
   gap: 30px;
 }
 
@@ -36,6 +36,32 @@
   margin: 20px 0px 5px 30px;
   color: var(--color-3);
   font-size: 26px;
+}
+
+#introContainer .buttons {
+  margin-left: 30px;
+  margin: 20px 0px 5px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+#introContainer .buttons .button {
+  background-color: var(--color-2);
+  border-radius: 5px;
+  color: var(--color-4);
+  padding: 12px 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px var(--color-4);
+  transition: 150ms all ease-in;
+  cursor: pointer;
+}
+
+#introContainer .buttons .button:hover {
+  box-shadow: 0px 0px 10px var(--color-4);
+  scale: 1.05;
+  color: var(--color-5);
 }
 
 .introImageDiv {

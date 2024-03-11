@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./styles.css";
-import myImage from "./assets/myImage3.jpg";
+import myImage from "./assets/myImage4.jpg";
+import resume from "../../assets/resume2024.pdf";
 
 function IntroPage() {
   return (
@@ -17,10 +18,16 @@ function IntroPage() {
               (new Date() - new Date("2003-08-17")) /
                 (1000 * 60 * 60 * 24 * 365.25)
             )}{" "}
-            year old software engineer that has been programming since he was
-            13. Currently studying Computer Science at Ontario Tech University,
-            specializing in data science.
+            year old software developer that has been programming since he was
+            13. Explore my portfolio, and let's embark on a collaborative
+            adventure to turn your ideas into reality!
           </p>
+          <div className="buttons">
+            <a download="resume.pdf" href={resume} className="button">
+              Resume
+            </a>
+            <a className="button">Contact Me</a>
+          </div>
           <h1 className="HTMLTags">{"</intro>"}</h1>
         </div>
         <div className="introImageDiv flex flexJustifyAndAlignCenter">
