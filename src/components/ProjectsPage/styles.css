@@ -80,8 +80,8 @@
 
 .project-cards > .title svg {
   fill: var(--color-4);
-  height: 3vh;
-  width: 3vh;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
 }
 

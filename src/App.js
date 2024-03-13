@@ -10,6 +10,7 @@ import ProjectsPage from "./components/ProjectsPage/index.js";
 import SkillsPage from "./components/SkillsPage";
 import WorkPage from "./components/WorkPage";
 import Guitar from "./components/Guitar";
+import ContactPage from "./components/ContactPage/index.js";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -90,6 +91,7 @@ function App() {
       <ProjectsPage />
       {/* <OtherSkills /> */}
       <Guitar />
+      <ContactPage />
     </>
   );
 }

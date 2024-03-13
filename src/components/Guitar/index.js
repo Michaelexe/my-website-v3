@@ -59,7 +59,7 @@ function Guitar() {
       ref={ref}
     >
       <div className="guitar flexColumn">
-        <h1 className="HTMLTags">{"<Guitar>"}</h1>
+        <h1 className="HTMLTags">{"<guitar>"}</h1>
         <div className="grid">
           {videos.map((video, index) => (
             <motion.div
@@ -107,7 +107,7 @@ function Guitar() {
           ))}
         </div>
         <h1 className="HTMLTags" style={{ marginLeft: "auto" }}>
-          {"</Guitar>"}
+          {"</guitar>"}
         </h1>
       </div>
     </div>
