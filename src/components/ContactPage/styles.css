@@ -30,16 +30,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  width: 100%;
 }
 
 .contact-main .grid div {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .contact-main .grid div input {
   background-color: var(--color-1);
+  width: 100%;
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
@@ -110,4 +113,42 @@
 .contact-main .socials svg:hover {
   scale: 1.2;
   fill: var(--color-5);
+}
+
+@media (max-width: 900px) {
+  .contact-main {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .contact-main .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-main .grid div input,
+  .contact-main .grid div textarea {
+    font-size: 18px;
+  }
+
+  .contact-main .grid div textarea {
+    height: 150px;
+  }
+
+  .contact-main button {
+    font-size: 20px;
+  }
+
+  .contact-main .socials {
+    gap: 10px;
+  }
+
+  .contact-main .socials svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  .contact-main .socials::before,
+  .contact-main .socials::after {
+    height: 4px;
+  }
 }

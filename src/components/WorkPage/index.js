@@ -6,7 +6,7 @@ import "./styles.css";
 import workJson from "./work.json";
 
 function WorkPage() {
-  const [currentTab, setCurrentTab] = useState("locaro");
+  const [currentTab, setCurrentTab] = useState("ao");
   return (
     <section id="secondPage" className="flex">
       <div className="work-container flex flexColumn">
