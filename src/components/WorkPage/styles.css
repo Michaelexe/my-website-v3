@@ -49,6 +49,11 @@
 
 .work-container__tabs__tab.active {
   color: var(--color-5) !important;
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    rgba(247, 37, 133, 0.3)
+  );
 }
 
 .work-container__content {

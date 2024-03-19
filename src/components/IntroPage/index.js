@@ -26,7 +26,9 @@ function IntroPage() {
             <a download="resume.pdf" href={resume} className="button">
               Resume
             </a>
-            <a className="button">Contact Me</a>
+            <a className="button" href="#contact">
+              Contact Me
+            </a>
           </div>
           <h1 className="HTMLTags">{"</intro>"}</h1>
         </div>
