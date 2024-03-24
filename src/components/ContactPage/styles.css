@@ -88,6 +88,11 @@
   color: var(--color-5);
 }
 
+.contact-main button:disabled {
+  background-color: gray;
+  opacity: 0.5;
+}
+
 .contact-main .socials {
   gap: 20px;
   align-items: center;

@@ -1,25 +1,59 @@
-import React from "react";
-
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./styles.css";
 
 function ContactPage() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_PUBLIC_KEY,
+        }
+      )
+      .then(() => {
+        alert("Email Sent!");
+        form.current.reset();
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(process.env.REACT_APP_SERVICE_ID);
+      });
+  };
   return (
     <section id="contact">
       <div className="contact-container flex flexColumn">
         <h1 className="HTMLTags">{"<contact>"}</h1>
-        <div className="contact-main flex flexColumn">
+        <form
+          className="contact-main flex flexColumn"
+          ref={form}
+          onSubmit={submitHandler}
+        >
           <h2>Get In Touch</h2>
           <div className="grid">
             <div>
-              <input type="text" placeholder="Name" />
-              <input type="text" placeholder="E-mail" />
-              <input type="text" placeholder="Phone (Optional)" />
+              <input type="text" placeholder="Name" name="user_name" />
+              <input type="text" placeholder="E-mail" name="user_email" />
+              <input
+                type="text"
+                placeholder="Phone (Optional)"
+                name="user_phone"
+              />
             </div>
             <div>
-              <textarea name="" id="" placeholder="Message"></textarea>
+              <textarea id="" placeholder="Message" name="message"></textarea>
             </div>
           </div>
-          <button>Send Message</button>
+          <button type="submit" disabled={loading}>
+            Send Message
+          </button>
           <div className="socials flex">
             <a
               href="https://www.linkedin.com/in/michael-ispahani-56a788224/"
@@ -68,7 +102,7 @@ function ContactPage() {
               </svg>
             </a>
           </div>
-        </div>
+        </form>
         <h1 className="HTMLTags" style={{ marginLeft: "auto" }}>
           {"</contact>"}
         </h1>

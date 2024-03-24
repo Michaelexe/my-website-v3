@@ -1,8 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
-
-import "./App.css";
-
 import IntroPage from "./components/IntroPage";
 import Navbar from "./components/Navbar";
 import OtherSkills from "./components/OtherSkills";
