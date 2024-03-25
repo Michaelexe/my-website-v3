@@ -1,6 +1,7 @@
 #contact {
   display: flex;
   justify-content: center;
+  margin: 80px 0px;
 }
 
 .contact-container {
@@ -121,6 +122,9 @@
 }
 
 @media (max-width: 900px) {
+  #contact {
+    margin: 40px 0px;
+  }
   .contact-main {
     padding: 30px 10px;
     gap: 20px;
