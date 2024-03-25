@@ -120,6 +120,10 @@
     text-align: center;
   }
 
+  .work-container__tabs__tab.active {
+    background-image: linear-gradient(transparent, rgba(247, 37, 133, 0.3));
+  }
+
   .work-container__tabs .MuiTabs-indicator {
     height: 4px;
     transform: unset;
