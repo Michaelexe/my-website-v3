@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4302cf52.css",
-    "main.js": "/static/js/main.682742c6.js",
+    "main.css": "/static/css/main.091ff57e.css",
+    "main.js": "/static/js/main.3646eb2e.js",
     "static/media/let-me-down-slowly.mp4": "/static/media/let-me-down-slowly.c7b002340cb419401729.mp4",
     "static/media/goose.mp4": "/static/media/goose.e78f587dbb4e0930c89d.mp4",
     "static/media/gooseGuitar.mp4": "/static/media/gooseGuitar.e78f587dbb4e0930c89d.mp4",
@@ -31,11 +31,11 @@
     "static/media/typescript.svg": "/static/media/typescript.b939a2d1b7b5da4819e25cf4a4a62420.svg",
     "static/media/javascript.svg": "/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
     "static/media/python.svg": "/static/media/python.14f5a10cd798d37370e148820ac33a75.svg",
-    "main.4302cf52.css.map": "/static/css/main.4302cf52.css.map",
-    "main.682742c6.js.map": "/static/js/main.682742c6.js.map"
+    "main.091ff57e.css.map": "/static/css/main.091ff57e.css.map",
+    "main.3646eb2e.js.map": "/static/js/main.3646eb2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4302cf52.css",
-    "static/js/main.682742c6.js"
+    "static/css/main.091ff57e.css",
+    "static/js/main.3646eb2e.js"
   ]
 }
