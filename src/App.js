@@ -86,7 +86,7 @@ function App() {
       <IntroPage />
       <WorkPage />
       <ProjectsPage />
-      {/* <OtherSkills /> */}
+      <SkillsPage />
       <Guitar />
       <ContactPage />
     </>

@@ -2,72 +2,90 @@ import React from "react";
 
 import "./styles.css";
 
-function SkillsPage(props) {
-  const { skillsContainer } = props;
+import pythonSVG from "./assets/python.svg";
+import javascriptSVG from "./assets/javascript.svg";
+import cppSVG from "./assets/cpp.svg";
+import javaSVG from "./assets/java.svg";
+import reactSVG from "./assets/react.svg";
+import nodejsSVG from "./assets/nodejs.svg";
+import flaskSVG from "./assets/flask.svg";
+import reduxSVG from "./assets/redux.svg";
+import postgresqlSVG from "./assets/postgresql.svg";
+import dartSVG from "./assets/dart.svg";
+import githubSVG from "./assets/github.svg";
+import amazonSVG from "./assets/amazon.svg";
+import azureSVG from "./assets/azure.svg";
+import djangoSVG from "./assets/django.svg";
+import htmlSVG from "./assets/html.svg";
+import cssSVG from "./assets/css.svg";
+import typescriptSVG from "./assets/typescript.svg";
+
+function SkillsPage() {
   return (
-    <section id="thirdPage" className="flex flexJustifyAndAlignCenter">
-      <div id="skillsContainer" className="fade-in" ref={skillsContainer}>
+    <section className="skills">
+      <div className="container">
         <h1 className="HTMLTags">{"<skills>"}</h1>
-        <div className="skillsProgressBarParentContainer flexColumn">
-          <h1>Skills</h1>
-          <div className="skillsProgressBarContainer flex">
-            <div className="skillsProgressBarContainerChildren">
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>Python</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "90%" }}>
-                  <div className="progressPercentageDiv">90%</div>
-                </div>
-              </div>
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>React</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "70%" }}>
-                  <div className="progressPercentageDiv">70%</div>
-                </div>
-              </div>
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>HTML</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "100%" }}>
-                  <div className="progressPercentageDiv">100%</div>
-                </div>
-              </div>
+        <div className="honeycomb-grid">
+          <div className="honeycomb-row">
+            <div className="hexagon">
+              <img src={pythonSVG} alt="" />
             </div>
-            <div className="skillsProgressBarContainerChildren">
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>JavaScript</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "80%" }}>
-                  <div className="progressPercentageDiv">80%</div>
-                </div>
-              </div>
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>CSS</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "95%" }}>
-                  <div className="progressPercentageDiv">95%</div>
-                </div>
-              </div>
-              <div className="actualProgressBarParentDiv flexColumn">
-                <h2>Guitar</h2>
-                <div className="bar"></div>
-                <div className="progress" style={{ width: "90%" }}>
-                  <div className="progressPercentageDiv">90%</div>
-                </div>
-              </div>
+            <div className="hexagon">
+              <img src={javascriptSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={cppSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={javaSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={dartSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={typescriptSVG} alt="" />
+            </div>
+          </div>
+          <div className="honeycomb-row">
+            <div className="hexagon">
+              <img src={reduxSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={flaskSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={nodejsSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={postgresqlSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={reactSVG} alt="" />
+            </div>
+          </div>
+          <div className="honeycomb-row">
+            <div className="hexagon">
+              <img src={amazonSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={azureSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={githubSVG} alt="" />
+            </div>
+
+            <div className="hexagon">
+              <img src={htmlSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={cssSVG} alt="" />
+            </div>
+            <div className="hexagon">
+              <img src={djangoSVG} alt="" />
             </div>
           </div>
         </div>
-        <h1
-          className="HTMLTags"
-          style={{
-            position: "relative",
-            left: "100%",
-            width: "fit-content",
-            transform: "translateX(-100%)",
-          }}
-        >
+        <h1 className="HTMLTags" style={{ marginLeft: "auto" }}>
           {"</skills>"}
         </h1>
       </div>
