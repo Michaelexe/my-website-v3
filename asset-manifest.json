@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ced7c7b4.css",
-    "main.js": "/static/js/main.fee5c6b0.js",
+    "main.css": "/static/css/main.4302cf52.css",
+    "main.js": "/static/js/main.682742c6.js",
     "static/media/let-me-down-slowly.mp4": "/static/media/let-me-down-slowly.c7b002340cb419401729.mp4",
     "static/media/goose.mp4": "/static/media/goose.e78f587dbb4e0930c89d.mp4",
     "static/media/gooseGuitar.mp4": "/static/media/gooseGuitar.e78f587dbb4e0930c89d.mp4",
@@ -12,13 +12,30 @@
     "static/media/myImage4.jpg": "/static/media/myImage4.291b34817245cacffc1c.jpg",
     "static/media/chess.jpg": "/static/media/chess.638d9592e9a4a834590f.jpg",
     "static/media/resume2024.pdf": "/static/media/resume2024.ff683da2b5e877b41294.pdf",
+    "static/media/flask.svg": "/static/media/flask.011dbe6094c89ed4076f26a98ad66dd6.svg",
     "static/media/logo.png": "/static/media/logo.3e3b764ed858566e50fb.png",
+    "static/media/nodejs.svg": "/static/media/nodejs.f163cddfbfe49648deb1ce8917207b77.svg",
+    "static/media/postgresql.svg": "/static/media/postgresql.00abd60866cb6eccfd8fd45702d3beea.svg",
+    "static/media/azure.svg": "/static/media/azure.c7485602ba0a23c54603fb432475c128.svg",
+    "static/media/react.svg": "/static/media/react.c60e072461a29d9c38291223075ac016.svg",
+    "static/media/amazon.svg": "/static/media/amazon.f0007377656af08d13f344e097d37378.svg",
+    "static/media/java.svg": "/static/media/java.799fbfb5362634b5a8d18a3f23fbed67.svg",
+    "static/media/django.svg": "/static/media/django.4b40d7a187aed56fec090501f4166e06.svg",
+    "static/media/github.svg": "/static/media/github.074f08264b8ed366dbd318a395cba239.svg",
+    "static/media/cpp.svg": "/static/media/cpp.0bd43dff6057d03b1061db19f79e6c4e.svg",
     "index.html": "/index.html",
-    "main.ced7c7b4.css.map": "/static/css/main.ced7c7b4.css.map",
-    "main.fee5c6b0.js.map": "/static/js/main.fee5c6b0.js.map"
+    "static/media/dart.svg": "/static/media/dart.18894183288e5beefa48aaf4a05e4ad4.svg",
+    "static/media/html.svg": "/static/media/html.8af6948df811f46a0eadbe39ad98638b.svg",
+    "static/media/redux.svg": "/static/media/redux.bebc8109dd6da3549dec06ffcd75c844.svg",
+    "static/media/css.svg": "/static/media/css.bba0846c17cbd72752bd3deda1c1fdae.svg",
+    "static/media/typescript.svg": "/static/media/typescript.b939a2d1b7b5da4819e25cf4a4a62420.svg",
+    "static/media/javascript.svg": "/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
+    "static/media/python.svg": "/static/media/python.14f5a10cd798d37370e148820ac33a75.svg",
+    "main.4302cf52.css.map": "/static/css/main.4302cf52.css.map",
+    "main.682742c6.js.map": "/static/js/main.682742c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.ced7c7b4.css",
-    "static/js/main.fee5c6b0.js"
+    "static/css/main.4302cf52.css",
+    "static/js/main.682742c6.js"
   ]
 }
