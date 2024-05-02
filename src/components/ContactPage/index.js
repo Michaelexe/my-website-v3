@@ -24,7 +24,9 @@ function ContactPage() {
         setLoading(false);
       })
       .catch((err) => {
-        console.log(process.env.REACT_APP_SERVICE_ID);
+        console.log(err);
+        alert("Something went wrong!");
+        setLoading(false);
       });
   };
   return (
