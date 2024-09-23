@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.091ff57e.css",
-    "main.js": "/static/js/main.b1ace1ab.js",
+    "main.css": "/static/css/main.90500eb2.css",
+    "main.js": "/static/js/main.630851f4.js",
     "static/media/let-me-down-slowly.mp4": "/static/media/let-me-down-slowly.c7b002340cb419401729.mp4",
     "static/media/goose.mp4": "/static/media/goose.e78f587dbb4e0930c89d.mp4",
     "static/media/gooseGuitar.mp4": "/static/media/gooseGuitar.e78f587dbb4e0930c89d.mp4",
@@ -9,9 +9,12 @@
     "static/media/glimpse-of-us.mp4": "/static/media/glimpse-of-us.e91bfca053faa9dbeb78.mp4",
     "static/media/dangerous.mp4": "/static/media/dangerous.19cc61b0c87457d63ab7.mp4",
     "static/media/icronic.mp4": "/static/media/icronic.183715c3d8138e648aa5.mp4",
+    "static/media/spamDetector2.png": "/static/media/spamDetector2.a58d5b0dcf1820144c53.png",
     "static/media/myImage4.jpg": "/static/media/myImage4.291b34817245cacffc1c.jpg",
     "static/media/chess.jpg": "/static/media/chess.638d9592e9a4a834590f.jpg",
+    "static/media/spamDetector1.png": "/static/media/spamDetector1.c798bf756a7d213cab97.png",
     "static/media/resume2024.pdf": "/static/media/resume2024.ff683da2b5e877b41294.pdf",
+    "static/media/siteTrackingDesign.png": "/static/media/siteTrackingDesign.a80471616cd616ac8058.png",
     "static/media/flask.svg": "/static/media/flask.011dbe6094c89ed4076f26a98ad66dd6.svg",
     "static/media/logo.png": "/static/media/logo.3e3b764ed858566e50fb.png",
     "static/media/nodejs.svg": "/static/media/nodejs.f163cddfbfe49648deb1ce8917207b77.svg",
@@ -31,11 +34,11 @@
     "static/media/typescript.svg": "/static/media/typescript.b939a2d1b7b5da4819e25cf4a4a62420.svg",
     "static/media/javascript.svg": "/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
     "static/media/python.svg": "/static/media/python.14f5a10cd798d37370e148820ac33a75.svg",
-    "main.091ff57e.css.map": "/static/css/main.091ff57e.css.map",
-    "main.b1ace1ab.js.map": "/static/js/main.b1ace1ab.js.map"
+    "main.90500eb2.css.map": "/static/css/main.90500eb2.css.map",
+    "main.630851f4.js.map": "/static/js/main.630851f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.091ff57e.css",
-    "static/js/main.b1ace1ab.js"
+    "static/css/main.90500eb2.css",
+    "static/js/main.630851f4.js"
   ]
 }
