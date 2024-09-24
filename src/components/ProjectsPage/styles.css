@@ -182,4 +182,9 @@
     column-gap: 10px;
     font-size: 13px !important;
   }
+
+  .project-cards iframe,
+  .project-cards img {
+    width: 100%;
+  }
 }
