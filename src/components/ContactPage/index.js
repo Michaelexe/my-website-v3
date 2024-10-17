@@ -41,12 +41,25 @@ function ContactPage() {
           <h2>Get In Touch</h2>
           <div className="grid">
             <div>
-              <input type="text" placeholder="Name" name="user_name" />
-              <input type="text" placeholder="E-mail" name="user_email" />
+              <input
+                type="text"
+                placeholder="Name"
+                name="user_name"
+                pattern="^[a-zA-Z\s]+$"
+                required
+              />
+              <input
+                type="text"
+                placeholder="E-mail"
+                name="user_email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                required
+              />
               <input
                 type="text"
                 placeholder="Phone (Optional)"
                 name="user_phone"
+                pattern="^(\+?[1-9]\d{1,14})?$"
               />
             </div>
             <div>
