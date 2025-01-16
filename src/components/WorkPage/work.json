@@ -1,10 +1,21 @@
 {
+  "ta": {
+    "organization": "Ontario Tech University",
+    "position": "Teaching Assistant",
+    "start_date": "Jan 2025",
+    "end_date": "April 2025",
+    "description": [
+      "Assisted students in mastering advanced C++ concepts, including pointers, memory management, and data structures.",
+      "Led lab sessions and provided one-on-one guidance to enhance understanding and problem-solving skills.",
+      "Graded assignments and projects, offering constructive feedback to support student learning.",
+      "Supported students in developing strong coding practices, including documentation, algorithm optimization, and testing."
+    ]
+  },
   "ao": {
     "organisation": "Academic Oasis",
-    "order": 0,
     "position": "CTO / Lead Software Developer",
     "start_date": "Jan 2024",
-    "end_date": "Present",
+    "end_date": "Aug 2024",
     "description": [
       "Managed and developed a comprehensive academic progress tracker, enabling students to monitor grades, assignments, and overall performance seamlessly.",
       "Designed and integrated a dynamic scheduling feature allowing students to input and manage class schedules, assignment due dates, and important events efficiently.",
@@ -14,7 +25,6 @@
   },
   "free": {
     "organisation": "",
-    "order": 1,
     "position": "Freelance Web Developer",
     "start_date": "May 2023",
     "end_date": "Present",
@@ -26,7 +36,6 @@
   },
   "locaro": {
     "organisation": "Locaro",
-    "order": 2,
     "position": "Software Developer / Co-Founder",
     "start_date": "Sept 2021",
     "end_date": "Present",
@@ -40,7 +49,6 @@
   },
   "qzense": {
     "organisation": "Qzense Labs",
-    "order": 3,
     "position": "Front End Intern",
     "start_date": "May 2022",
     "end_date": "Aug 2022",

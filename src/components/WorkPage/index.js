@@ -23,6 +23,13 @@ function WorkPage() {
             scrollButtons={false}
           >
             <Tab
+              label="Ontario Tech"
+              value="ta"
+              className={`work-container__tabs__tab ${
+                currentTab === "ta" ? "active" : ""
+              }`}
+            />
+            <Tab
               label="Academic Oasis"
               value="ao"
               className={`work-container__tabs__tab ${

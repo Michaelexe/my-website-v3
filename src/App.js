@@ -50,10 +50,14 @@ function App() {
           navbarRef.current.style.top = "0";
         }
         lastScrollTop = scrollTop;
-        if (scrollTop > 500) {
+        if (scrollTop > 200) {
           navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+          root.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
+          root.style.backdropFilter = "blur(5px)";
         } else {
           navbarRef.current.style.backgroundColor = "";
+          root.style.backdropFilter = "";
+          root.style.backgroundColor = "";
         }
       }
     });
@@ -70,10 +74,14 @@ function App() {
             navbarRef.current.style.top = "0";
           }
           lastScrollTop = scrollTop;
-          if (scrollTop > 500) {
+          if (scrollTop > 200) {
             navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
+            root.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
+            root.style.backdropFilter = "blur(5px)";
           } else {
             navbarRef.current.style.backgroundColor = "";
+            root.style.backdropFilter = "";
+            root.style.backgroundColor = "";
           }
         }
       });

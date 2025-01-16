@@ -25,6 +25,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  transition: all 0.2s ease-in;
 }
 
 /* fade in classes */

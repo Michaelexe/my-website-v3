@@ -2,7 +2,7 @@ import React from "react";
 
 import "./styles.css";
 import myImage from "./assets/myImage4.jpg";
-import resume from "../../assets/resume2024.pdf";
+import resume from "../../assets/Resume.pdf";
 
 function IntroPage() {
   return (
