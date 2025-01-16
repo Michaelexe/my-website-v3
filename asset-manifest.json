@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4077858.css",
-    "main.js": "/static/js/main.9cea970f.js",
+    "main.css": "/static/css/main.cfb4083c.css",
+    "main.js": "/static/js/main.94d69f53.js",
     "static/media/let-me-down-slowly.mp4": "/static/media/let-me-down-slowly.c7b002340cb419401729.mp4",
     "static/media/goose.mp4": "/static/media/goose.e78f587dbb4e0930c89d.mp4",
     "static/media/gooseGuitar.mp4": "/static/media/gooseGuitar.e78f587dbb4e0930c89d.mp4",
@@ -13,7 +13,7 @@
     "static/media/myImage4.jpg": "/static/media/myImage4.291b34817245cacffc1c.jpg",
     "static/media/chess.jpg": "/static/media/chess.638d9592e9a4a834590f.jpg",
     "static/media/spamDetector1.png": "/static/media/spamDetector1.c798bf756a7d213cab97.png",
-    "static/media/resume2024.pdf": "/static/media/resume2024.ff683da2b5e877b41294.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.d05d358a101077a0d715.pdf",
     "static/media/siteTrackingDesign.png": "/static/media/siteTrackingDesign.a80471616cd616ac8058.png",
     "static/media/flask.svg": "/static/media/flask.011dbe6094c89ed4076f26a98ad66dd6.svg",
     "static/media/logo.png": "/static/media/logo.3e3b764ed858566e50fb.png",
@@ -34,11 +34,11 @@
     "static/media/typescript.svg": "/static/media/typescript.b939a2d1b7b5da4819e25cf4a4a62420.svg",
     "static/media/javascript.svg": "/static/media/javascript.cb6c28ae8b07ac4ffe29cee2352650dd.svg",
     "static/media/python.svg": "/static/media/python.14f5a10cd798d37370e148820ac33a75.svg",
-    "main.f4077858.css.map": "/static/css/main.f4077858.css.map",
-    "main.9cea970f.js.map": "/static/js/main.9cea970f.js.map"
+    "main.cfb4083c.css.map": "/static/css/main.cfb4083c.css.map",
+    "main.94d69f53.js.map": "/static/js/main.94d69f53.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4077858.css",
-    "static/js/main.9cea970f.js"
+    "static/css/main.cfb4083c.css",
+    "static/js/main.94d69f53.js"
   ]
 }
