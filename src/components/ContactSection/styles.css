@@ -1,0 +1,162 @@
+#contact {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px;
+}
+
+.contact-container {
+  width: 95%;
+  max-width: 1000px;
+  gap: 20px;
+}
+
+.contact-main {
+  padding: 40px;
+  background-color: var(--color-2);
+  border-radius: 10px;
+  gap: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-main h2 {
+  color: var(--color-3);
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.contact-main .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-main .grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-main .grid div input {
+  background-color: var(--color-1);
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  color: var(--color-3);
+  box-shadow: inset 0px 0px 10px black;
+}
+
+.contact-main .grid div textarea {
+  height: 100%;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+  resize: none;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+.contact-main .grid div textarea:focus,
+.contact-main .grid div input:focus {
+  outline-color: var(--color-3);
+}
+
+.contact-main button {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-shadow: none;
+  border: none;
+  transition: all 100ms ease-in;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact-main button:hover {
+  scale: 1.05;
+  box-shadow: 0px 0px 10px var(--color-3);
+  color: var(--color-5);
+}
+
+.contact-main button:disabled {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.contact-main .socials {
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-main .socials::before,
+.contact-main .socials::after {
+  content: "";
+  display: block;
+  background-color: var(--color-3);
+  width: 100%;
+  height: 6px;
+}
+
+.contact-main .socials svg {
+  height: 50px;
+  width: 50px;
+  fill: var(--color-3);
+  transition: all 100ms ease-in;
+}
+
+.contact-main .socials svg:hover {
+  scale: 1.2;
+  fill: var(--color-5);
+}
+
+@media (max-width: 900px) {
+  #contact {
+    margin: 40px 0px;
+  }
+  .contact-main {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .contact-main .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-main .grid div input,
+  .contact-main .grid div textarea {
+    font-size: 18px;
+  }
+
+  .contact-main .grid div textarea {
+    height: 150px;
+  }
+
+  .contact-main button {
+    font-size: 20px;
+  }
+
+  .contact-main .socials {
+    gap: 10px;
+  }
+
+  .contact-main .socials svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  .contact-main .socials::before,
+  .contact-main .socials::after {
+    height: 4px;
+  }
+}

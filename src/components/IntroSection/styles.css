@@ -1,0 +1,140 @@
+#firstPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-height: 1080px;
+}
+
+#introContainer {
+  width: calc(100% - 10px);
+  max-width: 1100px;
+  gap: 30px;
+}
+
+.introText {
+  width: 65%;
+  height: 100%;
+  justify-content: center;
+}
+
+#introContainer h2 {
+  margin-left: 30px;
+  font-size: 40px;
+  color: var(--color-4);
+}
+
+#introContainer h3 {
+  margin-left: 30px;
+  font-size: 44px;
+  color: var(--color-3);
+}
+
+#introContainer p {
+  margin: 20px 0px 5px 30px;
+  color: var(--color-3);
+  font-size: 26px;
+}
+
+#introContainer .buttons {
+  margin-left: 30px;
+  margin: 20px 0px 5px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+#introContainer .buttons .button {
+  background-color: var(--color-2);
+  border-radius: 5px;
+  color: var(--color-4);
+  padding: 12px 20px;
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0px 0px 5px var(--color-4);
+  transition: 150ms all ease-in;
+  cursor: pointer;
+}
+
+#introContainer .buttons .button:hover {
+  box-shadow: 0px 0px 10px var(--color-4);
+  scale: 1.05;
+  color: var(--color-5);
+}
+
+.introImageDiv {
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.introImageDiv img {
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
+  box-shadow: 0px 0px 20px black;
+}
+
+@media (max-width: 800px) {
+  #firstPage {
+    position: relative;
+    height: fit-content;
+    padding: 1px 0px;
+  }
+
+  #introContainer {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    gap: 10px;
+    align-items: center;
+    margin: 80px 0px;
+    margin-right: 0px;
+  }
+
+  #introContainer h2 {
+    font-size: 28px;
+    margin: 0px 10px;
+  }
+
+  #introContainer h3 {
+    font-size: 30px;
+    margin: 0px 10px;
+  }
+
+  #introContainer p {
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 0;
+  }
+
+  .introText {
+    height: fit-content;
+    width: 95%;
+    order: 2;
+  }
+
+  .introImageDiv {
+    height: fit-content;
+    width: 100%;
+    order: 1;
+  }
+
+  .introImageDiv img {
+    width: 80%;
+    height: inherit;
+  }
+
+  #introContainer .buttons {
+    width: 100%;
+    margin: 10px 10px;
+  }
+
+  #introContainer .buttons .button {
+    font-size: 20px;
+  }
+}

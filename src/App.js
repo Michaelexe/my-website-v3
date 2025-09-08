@@ -1,13 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
+import { BrowserRouter } from "react-router-dom";
 import NET from "vanta/dist/vanta.net.min";
-import IntroPage from "./components/IntroPage";
 import Navbar from "./components/Navbar";
-import OtherSkills from "./components/OtherSkills";
-import ProjectsPage from "./components/ProjectsPage/index.js";
-import SkillsPage from "./components/SkillsPage";
-import WorkPage from "./components/WorkPage";
-import Guitar from "./components/Guitar";
-import ContactPage from "./components/ContactPage/index.js";
+import AnimatedRoutes from "./components/AnimatedRoutes.js";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -39,49 +34,37 @@ function App() {
   }, [vantaEffect]);
 
   useEffect(() => {
-    let lastScrollTop = 0;
     let root = document.querySelector("#root");
+    let blurWrapper = document.querySelector("#blur-wrapper");
     root.addEventListener("scroll", () => {
       let scrollTop = root.scrollTop;
       if (navbarRef.current) {
-        if (scrollTop > lastScrollTop && window.innerWidth > 800) {
-          navbarRef.current.style.top = "-10vh";
-        } else {
-          navbarRef.current.style.top = "0";
-        }
-        lastScrollTop = scrollTop;
         if (scrollTop > 200) {
           navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
-          root.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
-          root.style.backdropFilter = "blur(5px)";
+          blurWrapper.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
+          blurWrapper.style.backdropFilter = "blur(5px)";
         } else {
           navbarRef.current.style.backgroundColor = "";
-          root.style.backdropFilter = "";
-          root.style.backgroundColor = "";
+          blurWrapper.style.backdropFilter = "";
+          blurWrapper.style.backgroundColor = "";
         }
       }
     });
 
     return () => {
-      let lastScrollTop = 0;
       let root = document.querySelector("#root");
+      let blurWrapper = document.querySelector("#blur-wrapper");
       root.removeEventListener("scroll", () => {
         let scrollTop = root.scrollTop;
         if (navbarRef.current) {
-          if (scrollTop > lastScrollTop && window.innerWidth > 800) {
-            navbarRef.current.style.top = "-10vh";
-          } else {
-            navbarRef.current.style.top = "0";
-          }
-          lastScrollTop = scrollTop;
           if (scrollTop > 200) {
             navbarRef.current.style.backgroundColor = "rgba(1, 22, 39, 0.95)";
-            root.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
-            root.style.backdropFilter = "blur(5px)";
+            blurWrapper.style.backgroundColor = "rgba(1, 22, 39, 0.6)";
+            blurWrapper.style.backdropFilter = "blur(5px)";
           } else {
             navbarRef.current.style.backgroundColor = "";
-            root.style.backdropFilter = "";
-            root.style.backgroundColor = "";
+            blurWrapper.style.backdropFilter = "";
+            blurWrapper.style.backgroundColor = "";
           }
         }
       });
@@ -89,15 +72,12 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar navbarRef={navbarRef} />
-      <IntroPage />
-      <WorkPage />
-      <ProjectsPage />
-      <SkillsPage />
-      <Guitar />
-      <ContactPage />
-    </>
+      <div id="blur-wrapper">
+        <AnimatedRoutes />
+      </div>
+    </BrowserRouter>
   );
 }
 

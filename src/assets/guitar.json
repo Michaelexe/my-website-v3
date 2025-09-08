@@ -1,0 +1,20 @@
+{
+  "Touch": {
+    "artist": "KATSEYE",
+    "video": "touch.mp4",
+    "coverImage": "touch.jpg",
+    "date": [25, 8, 2025]
+  },
+  "Free": {
+    "artist": "Kpop Demon Hunters",
+    "video": "free.mp4",
+    "coverImage": "free.jpg",
+    "date": [14, 8, 2025]
+  },
+  "Your Idol": {
+    "artist": "Saja Boys",
+    "coverImage": "yourIdol.jpg",
+    "video": "yourIdol.mp4",
+    "date": [26, 7, 2025]
+  }
+}
